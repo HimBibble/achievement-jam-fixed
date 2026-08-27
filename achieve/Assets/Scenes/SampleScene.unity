@@ -370,7 +370,7 @@ GameObject:
   - component: {fileID: 625454802}
   - component: {fileID: 625454801}
   m_Layer: 0
-  m_Name: Angel's Cube of Commitment
+  m_Name: Renamed Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
