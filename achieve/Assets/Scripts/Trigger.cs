@@ -7,17 +7,6 @@ public class Trigger
 {
     private string name;
     private bool isTriggered;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     //do i need to tell you that this is a constructor
     public Trigger(string name, bool isTriggered=false){
         //validation!!!
