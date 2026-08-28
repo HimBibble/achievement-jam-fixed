@@ -31,10 +31,6 @@ public class PlayerMovement : MonoBehaviour
             transform.Translate(Vector3.back * speed * Time.deltaTime);
             transform.Translate(Vector3.right * speed * Time.deltaTime);
         }
-        if (Input.GetKey(KeyCode.E))
-        {
-            //Squawk
-        }
         if (Input.GetKeyDown(KeyCode.Space))
         {
             //Jump
