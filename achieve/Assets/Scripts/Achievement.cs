@@ -1,71 +1,86 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-//script which contains the "Achievement" class.
-//Edit this script to alter the functionality of achievements
+/*
+Data Script which contains the "Achievement" class.
+Edit this script to alter the functionality of achievements.
+Each achievement stores a name, ID, and description, whether or not it is unlocked, 
+as well as a list of triggers which act as the unlock requirements.
+*/
 public class Achievement
 {
-    private string achievementName;
-    private int achievementID;
-    private string achievementDescription;
-    private bool isUnlocked;
-    private List<Trigger> achievementRequirements = new List<Trigger>();
-    //do i need to tell you that this is a constructor
-    public Achievement(string name, Trigger[] unlockRequirements, bool isUnlocked=false, string achievementDescription="No description added", int achievementID=0){
-        //validation!!!
-        if(string.IsNullOrEmpty(name)){
-             Debug.LogError("New achievement needs a name!");
-        }
-    }
-    //getters and setters
-    public string GetAchievementName(){
-        return achievementName;
-    }
-    public int GetAchievementID(){
-        return achievementID;
-    }
-    public string GetAchievementDescription(){
-        return achievementDescription;
-    }
-    public bool GetIsUnlocked(){
-        return isUnlocked;
-    }
-    public List<Trigger> GetAchievementRequirements(){
-        return achievementRequirements;
-    }
-    public void SetAchievementName(string achievementName){
-        if(string.IsNullOrEmpty(achievementName)){
-            //validation!!!
-             Debug.LogError("Can't set achievement "+this.achievementName+" name to nothing!");
-        }
+    private string AchievementName;
+    public string achievementName 
+    {
+        get {return achievementName;}
+        set 
+        {
+            if(string.IsNullOrEmpty(achievementName))
+            {
+                Debug.LogError("Can't set achievement "+this.achievementName+" name to null or empty!");
+            }
         this.achievementName = achievementName;
+        }
     }
-    public void SetAchievementID(int achievementID){
-        this.achievementID=achievementID;
-        //check if achievementdata ID already used
+    private int AchievementID;
+    public int achievementID
+    {
+        get {return achievementID;}
+        set 
+        {
+            this.achievementID=achievementID;
+            //IMPLEMENT THIS!! check if achievementdata ID already used
+        }
     }
-    public void SetAchievementDescription(string achievementDescription){
-        if(string.IsNullOrEmpty(achievementDescription)){
-            //validation!!!
-             Debug.LogError("Can't set achievement "+achievementName+" description to nothing!");
+    private string AchievementDescription;
+    public string achievementDescription
+    {
+        get {return AchievementDescription;}
+        set
+        {
+        if(string.IsNullOrEmpty(achievementDescription))
+        {
+            Debug.LogError("Can't set achievement "+achievementName+" description to null or empty!");
         }
         this.achievementDescription = achievementDescription;
-    }
-    public void SetAchievementRequirements(List<Trigger> achievementRequirements){
-        if(achievementRequirements.Count==0){
-            Debug.LogError("Achievement "+achievementName+ "unlock requirements are empty!");
         }
-        this.achievementRequirements=achievementRequirements;
     }
-    public void AddAchievementRequirement(Trigger trigger){
-        achievementRequirements.Add(trigger);
+    private bool IsUnlocked;
+    public bool isUnlocked {get; set;}
+    private List<Trigger> AchievementTriggers = new List<Trigger>();
+    public List<Trigger> achievementTriggers
+    {
+        get {return AchievementTriggers;}
+        set
+        {
+            if(achievementTriggers.Count==0){
+                Debug.LogError("Achievement "+achievementName+ "unlock triggers are empty!");
+            }
+            this.achievementTriggers=achievementTriggers;
+        }
     }
-    public void RemoveAchievementRequirement(Trigger trigger){
-        achievementRequirements.Remove(new Trigger(trigger.GetName()));
+    public Achievement(string achievementName="default achievement", List<Trigger> achievementTriggers=null, 
+    bool isUnlocked=false, string achievementDescription="No description added", int achievementID=0)
+    {
+        this.achievementName=achievementName;
+        this.achievementTriggers=achievementTriggers;
+        this.isUnlocked=isUnlocked;
+        this.achievementDescription=achievementDescription;
+        this.achievementID=achievementID;
     }
-    public void unlockAchievement(){
+    
+    public void AddAchievementTrigger(Trigger triggerToAdd)
+    {
+        achievementTriggers.Add(triggerToAdd);
+    }
+    public void RemoveAchievementTrigger(Trigger triggerToRemove)
+    {
+        achievementTriggers.Remove(new Trigger(triggerToRemove.triggerName));
+    }
+    public void UnlockAchievement()
+    {
         isUnlocked=true;
-        //call to whatever script does funny ui stuff and sound. DONT PUT THE ACTUAL CODE HERE!!!
+        //IMPLEMENT THIS!!! Call to whatever script does funny ui stuff and sound. 
     }
 }
 

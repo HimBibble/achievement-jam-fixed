@@ -1,65 +1,75 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-//a place to store all of the triggers used by the game's achievements
+/*
+Data Script which stores and allows access to all of the triggers in the game.
+As triggers are implemented, they will be added here.
+*/
 public static class TriggerData
 {
-    //private static List<Trigger> ALL_TRIGGERS = new List<Trigger>();
-    //static Trigger a = new Trigger("a");
-    //Debug.Log(a.GetName());
-    //ALL_TRIGGERS.Add(a);
-    /*ALL_TRIGGERS.Add(new Trigger("MoveDown"));
-    ALL_TRIGGERS.Add(new Trigger("MoveLeft"));
-    ALL_TRIGGERS.Add(new Trigger("MoveRight"));
-    ALL_TRIGGERS.Add(new Trigger("Squawk"));
-    ALL_TRIGGERS.Add(new Trigger("Squawk5"));
-    ALL_TRIGGERS.Add(new Trigger("Squawk50"));
-    ALL_TRIGGERS.Add(new Trigger("Die"));
-    ALL_TRIGGERS.Add(new Trigger("Die5"));
-    ALL_TRIGGERS.Add(new Trigger("Die42"));
-    ALL_TRIGGERS.Add(new Trigger("DieFast"));
-    ALL_TRIGGERS.Add(new Trigger("KonamiCode"));
-    ALL_TRIGGERS.Add(new Trigger("Alive10s"));
-    ALL_TRIGGERS.Add(new Trigger("Alive30s"));
-    ALL_TRIGGERS.Add(new Trigger("Alive300s"));
-    ALL_TRIGGERS.Add(new Trigger("Key1"));
-    ALL_TRIGGERS.Add(new Trigger("Key2"));
-    ALL_TRIGGERS.Add(new Trigger("Key3"));
-    ALL_TRIGGERS.Add(new Trigger("Key4"));
-    ALL_TRIGGERS.Add(new Trigger("Key5"));
-    ALL_TRIGGERS.Add(new Trigger("Key6"));
-    ALL_TRIGGERS.Add(new Trigger("Key7"));
-    ALL_TRIGGERS.Add(new Trigger("Key8"));
-    ALL_TRIGGERS.Add(new Trigger("Key9"));
-    ALL_TRIGGERS.Add(new Trigger("Key0"));
-    ALL_TRIGGERS.Add(new Trigger("Pause"));
-    ALL_TRIGGERS.Add(new Trigger("Unpause"));
-    ALL_TRIGGERS.Add(new Trigger("Fall"));
-    ALL_TRIGGERS.Add(new Trigger("NoSquawk60"));
-    ALL_TRIGGERS.Add(new Trigger("CollideTree"));
-    ALL_TRIGGERS.Add(new Trigger("DecreaseAudio"));
-    ALL_TRIGGERS.Add(new Trigger("MuteAudio"));
-    ALL_TRIGGERS.Add(new Trigger("1Ach"));
-    ALL_TRIGGERS.Add(new Trigger("10Ach"));
-    ALL_TRIGGERS.Add(new Trigger("50Ach"));
-    ALL_TRIGGERS.Add(new Trigger("Click"));
-    ALL_TRIGGERS.Add(new Trigger("RightClick"));
-    ALL_TRIGGERS.Add(new Trigger("MiddleClick"));
-    ALL_TRIGGERS.Add(new Trigger("SecretSpot"));
-    ALL_TRIGGERS.Add(new Trigger("FlowerRing"));
-    ALL_TRIGGERS.Add(new Trigger("Flytrap"));
-    ALL_TRIGGERS.Add(new Trigger("Flytrap2"));
-    ALL_TRIGGERS.Add(new Trigger("Flytrap3"));
-    ALL_TRIGGERS.Add(new Trigger("Flytrap4"));
-    ALL_TRIGGERS.Add(new Trigger("Flytrap5"));
-    ALL_TRIGGERS.Add(new Trigger("Settings"));
-    ALL_TRIGGERS.Add(new Trigger("Credits"));
-    ALL_TRIGGERS.Add(new Trigger("TrampleFlower"));
-    ALL_TRIGGERS.Add(new Trigger("TrampleFlower5"));
-    ALL_TRIGGERS.Add(new Trigger("TrampleFlowerAll"));
+    private static List<Trigger> ALL_TRIGGERS = new List<Trigger>()
+    {
+        new Trigger() {triggerName="MoveRight"},
+        new Trigger() {triggerName="MoveLeft"},
+        new Trigger() {triggerName="MoveUp"},
+        new Trigger() {triggerName="MoveDown"},
+        new Trigger() {triggerName="Squawk"},
+        new Trigger() {triggerName="Squawk5"},
+        new Trigger() {triggerName="Squawk50"},
+        new Trigger() {triggerName="Jump"},
+        new Trigger() {triggerName="Jump5"},
+        new Trigger() {triggerName="Jump50"},
+        new Trigger() {triggerName="Die"},
+        new Trigger() {triggerName="Die5"},
+        new Trigger() {triggerName="Die42"},
+        new Trigger() {triggerName="DieIn5s"},
+        new Trigger() {triggerName="Alive10s"},
+        new Trigger() {triggerName="Alive30s"},
+        new Trigger() {triggerName="Alive300s"},
+        new Trigger() {triggerName="KonamiCode"},
+        new Trigger() {triggerName="Key1"},
+        new Trigger() {triggerName="Key2"},
+        new Trigger() {triggerName="Key3"},
+        new Trigger() {triggerName="Key4"},
+        new Trigger() {triggerName="Key5"},
+        new Trigger() {triggerName="Key6"},
+        new Trigger() {triggerName="Key7"},
+        new Trigger() {triggerName="Key8"},
+        new Trigger() {triggerName="Key9"},
+        new Trigger() {triggerName="Key0"},
+        new Trigger() {triggerName="Pause"},
+        new Trigger() {triggerName="Unpause"},
+        new Trigger() {triggerName="VoidOut"},
+        new Trigger() {triggerName="NoSquawk60"},
+        new Trigger() {triggerName="DecreaseAudio"},
+        new Trigger() {triggerName="MuteAudio"},
+        new Trigger() {triggerName="IncreaseVolume"},
+        new Trigger() {triggerName="1Achievement"},
+        new Trigger() {triggerName="10Achievement"},
+        new Trigger() {triggerName="50Achievement"},
+        new Trigger() {triggerName="LeftMouse"},
+        new Trigger() {triggerName="RightMouse"},
+        new Trigger() {triggerName="MiddleMouse"},
+        new Trigger() {triggerName="SecretSpot"},
+        new Trigger() {triggerName="FlowerRing"},
+        new Trigger() {triggerName="FeedFlytrap"},
+        new Trigger() {triggerName="FeedFlytrap2"},
+        new Trigger() {triggerName="FeedFlytrap3"},
+        new Trigger() {triggerName="FeedFlytrap4"},
+        new Trigger() {triggerName="FeedFlytrap5"},
+        new Trigger() {triggerName="SettingsMenu"},
+        new Trigger() {triggerName="CreditsMenu"},
+        new Trigger() {triggerName="ClickDevAngel"},
+        new Trigger() {triggerName="ClickDevChristian"},
+        new Trigger() {triggerName="ClickDevDaniel"},
+        new Trigger() {triggerName="ClickDevNathan"},
+        new Trigger() {triggerName="ClickDevThai"},
+        new Trigger() {triggerName="TrampleFlower"},
+        new Trigger() {triggerName="TrampleFlower5"},
+        new Trigger() {triggerName="TrampleFlowerAll"}
+    };
 
-    public static Trigger GetTrigger(string name){
-        return ALL_TRIGGERS.Find(i => i.GetName() == name)
+    public static Trigger GetTrigger(string nameToFind){
+        return ALL_TRIGGERS.Find(i => i.triggerName == nameToFind);
     }
-    */
 }

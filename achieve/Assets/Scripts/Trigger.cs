@@ -1,34 +1,38 @@
 using UnityEngine;
+using System.Collections.Generic;
 
-//script which contains the "Trigger" class.
-//Edit this script to alter the functionality of achievement triggers
+/*
+Data Script which contains the "Trigger" class.
+Edit this script to alter the functionality of achievement triggers.
+Each trigger stores its name, and whether or not it is triggered.
+The logic behind triggers lies within the code for the relevant mechanic.
+Example: movement code will activate movement-based triggers. Trigger logic is not stored in the trigger itself.
+This script also contains extra comments regarding c# properties (automatic getter/setters), if needed.
+*/
+
 
 public class Trigger
 {
-    private string name;
-    private bool isTriggered;
-    //do i need to tell you that this is a constructor
-    public Trigger(string name, bool isTriggered=false){
-        //validation!!!
-        if(string.IsNullOrEmpty(name)){
-             Debug.LogError("New trigger needs a name!");
+    //variables use c# properties for automatic getters and setters
+    private string TriggerName; //variable
+    public string triggerName //custom properties
+    {
+        get{return TriggerName;}
+        set
+        {
+            if(string.IsNullOrEmpty(triggerName)) //validation
+            {
+             Debug.LogError("Trigger name is null or empty!");
+            }
+        this.TriggerName = triggerName; //fills variable TriggerName with implicit string argument triggerName
         }
     }
-    //getters and setters
-    public string GetName(){
-        return name;
-    }
-    public bool GetIsTriggered(){
-        return isTriggered;
-    }
-    public void SetName(string name){
-        if(string.IsNullOrEmpty(name)){
-            //validation!!!
-             Debug.LogError("Can't set trigger name to nothing!");
-        }
-        this.name = name;
-    }
-    public void SetIsTriggered(bool isTriggered){
-        this.isTriggered = isTriggered;
+    private bool IsTriggered;
+    public bool isTriggered {get; set;}
+    public Trigger(string triggerName="default trigger", bool isTriggered=false)
+    {
+        this.triggerName=triggerName; //calls setters from property triggerName
+        this.isTriggered=isTriggered;
+        
     }
 }
