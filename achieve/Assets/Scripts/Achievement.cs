@@ -12,24 +12,15 @@ public class Achievement
     private string AchievementName;
     public string achievementName 
     {
-        get {return achievementName;}
+        get {return AchievementName;}
         set 
         {
-            if(string.IsNullOrEmpty(achievementName))
+            if(string.IsNullOrEmpty(value))
             {
-                Debug.LogError("Can't set achievement "+this.achievementName+" name to null or empty!");
+                Debug.LogError("Can't set achievement name to null or empty!");
+                AchievementName="default achievement";
             }
-        this.achievementName = achievementName;
-        }
-    }
-    private int AchievementID;
-    public int achievementID
-    {
-        get {return achievementID;}
-        set 
-        {
-            this.achievementID=achievementID;
-            //IMPLEMENT THIS!! check if achievementdata ID already used
+            else {AchievementName = value;}
         }
     }
     private string AchievementDescription;
@@ -38,11 +29,11 @@ public class Achievement
         get {return AchievementDescription;}
         set
         {
-        if(string.IsNullOrEmpty(achievementDescription))
+        if(string.IsNullOrEmpty(value))
         {
-            Debug.LogError("Can't set achievement "+achievementName+" description to null or empty!");
+            Debug.LogError("Can't set achievement "+AchievementName+" description to null or empty!");
         }
-        this.achievementDescription = achievementDescription;
+        this.AchievementDescription = value;
         }
     }
     private bool IsUnlocked;
@@ -51,35 +42,26 @@ public class Achievement
     public List<Trigger> achievementTriggers
     {
         get {return AchievementTriggers;}
-        set
-        {
-            if(achievementTriggers.Count==0){
-                Debug.LogError("Achievement "+achievementName+ "unlock triggers are empty!");
-            }
-            this.achievementTriggers=achievementTriggers;
-        }
     }
-    public Achievement(string achievementName="default achievement", List<Trigger> achievementTriggers=null, 
-    bool isUnlocked=false, string achievementDescription="No description added", int achievementID=0)
+    public Achievement(string achievementName, string achievementDescription, 
+    bool isUnlocked=false)
     {
         this.achievementName=achievementName;
-        this.achievementTriggers=achievementTriggers;
-        this.isUnlocked=isUnlocked;
         this.achievementDescription=achievementDescription;
-        this.achievementID=achievementID;
+        this.isUnlocked=isUnlocked;
     }
     
     public void AddAchievementTrigger(Trigger triggerToAdd)
     {
-        achievementTriggers.Add(triggerToAdd);
+        AchievementTriggers.Add(triggerToAdd);
     }
     public void RemoveAchievementTrigger(Trigger triggerToRemove)
     {
-        achievementTriggers.Remove(new Trigger(triggerToRemove.triggerName));
+        AchievementTriggers.Remove(new Trigger(triggerToRemove.triggerName));
     }
     public void UnlockAchievement()
     {
-        isUnlocked=true;
+        IsUnlocked=true;
         //IMPLEMENT THIS!!! Call to whatever script does funny ui stuff and sound. 
     }
 }

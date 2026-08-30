@@ -20,19 +20,20 @@ public class Trigger
         get{return TriggerName;}
         set
         {
-            if(string.IsNullOrEmpty(triggerName)) //validation
+            if(string.IsNullOrEmpty(value)) //validation
             {
-             Debug.LogError("Trigger name is null or empty!");
+                Debug.LogError("Trigger name is null or empty!");
+                TriggerName="default trigger";
             }
-        this.TriggerName = triggerName; //fills variable TriggerName with implicit string argument triggerName
+            else {TriggerName = value;} //fills variable TriggerName with implicit string argument value
         }
     }
     private bool IsTriggered;
     public bool isTriggered {get; set;}
-    public Trigger(string triggerName="default trigger", bool isTriggered=false)
+    public Trigger(string triggerName, bool isTriggered=false)
     {
-        this.triggerName=triggerName; //calls setters from property triggerName
-        this.isTriggered=isTriggered;
+        this.triggerName=triggerName; //calls setter from property triggerName
+        this.isTriggered=isTriggered; //calls setter from property isTriggered
         
     }
 }

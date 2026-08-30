@@ -1,0 +1,59 @@
+Walk to the right.
+Walk to the left.
+Walk upwards
+Walk downwards
+Press the [Squawk Key]
+Press the [Squawk Key] 5 times
+Press the [Squawk Key] 50 times
+Press the [Jump Key] 
+Press the [Jump Key] 5 times
+Press the [Jump Key] 50 times
+Die for the first time
+Die 5 times 
+Die 42 times
+Die within 5 seconds of spawning
+Stay alive for 10 seconds
+Stay alive for 30 seconds
+Stay alive for 5 minutes.
+Enter the Konami Code.
+Press the number 1.
+Press the number 2.
+Press the number 3.
+Press the number 4.
+Press the number 5.
+Press the number 6.
+Press the number 7.
+Press the number 8.
+Press the number 9.
+Press the number 0.
+Pause the game.
+Resume the game.
+Fall off the map.
+Don't squawk for 1 minute.
+Touch a tree.
+Lower the games audio
+Mute the game.
+Raise the games audio.
+Earn your first achievement.
+Earn ten achievements.
+Earn fifty achievements.
+Click the game.
+Right click the game.
+Middle click the game.
+Find the developers fav spot.
+Find the circle of flowers.
+Feed a venus flytrap.
+Feed a venus flytrap twice.
+Feed a venus flytrap three times.
+Feed a venus flytrap four times.
+Feed a venus flytrap five times.
+Open the settings menu
+Look at the credits.
+Click on (dev name)
+Click on (dev name)
+Click on (dev name)
+Click on (dev name)
+Click on (dev name)
+Crush a flower
+Crush 5 flowers.
+Crush all the flowers.
