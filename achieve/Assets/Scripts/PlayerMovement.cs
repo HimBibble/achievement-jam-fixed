@@ -16,6 +16,12 @@ public class PlayerMovement : MonoBehaviour
     {
         moveh = Input.GetAxis("Horizontal") * speed;
         movev = Input.GetAxis("Vertical") * speed;
+        //christian wuz here, just checkin for achievement triggers
+        if(moveh>0){TriggerData.SetTrigger("MoveRight",true);}
+        if(moveh<0){TriggerData.SetTrigger("MoveLeft",true);}
+        if(movev>0){TriggerData.SetTrigger("MoveUp",true);}
+        if(movev<0){TriggerData.SetTrigger("MoveDown",true);}
+        //end christian code
         rb.linearVelocity = new Vector2(moveh, movev);
 
         Vector2 direction = new Vector2(moveh, movev);

@@ -17,7 +17,7 @@ public class Trigger
     private string TriggerName; //variable
     public string triggerName //custom properties
     {
-        get{return TriggerName;}
+        get {return TriggerName;}
         set
         {
             if(string.IsNullOrEmpty(value)) //validation
@@ -29,7 +29,7 @@ public class Trigger
         }
     }
     private bool IsTriggered;
-    public bool isTriggered {get; set;}
+    public bool isTriggered {get {return IsTriggered;} set {IsTriggered=value;}}
     public Trigger(string triggerName, bool isTriggered=false)
     {
         this.triggerName=triggerName; //calls setter from property triggerName

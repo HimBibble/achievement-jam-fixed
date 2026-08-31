@@ -4,7 +4,7 @@ using System.Collections.Generic;
 /*
 Data Script which contains the "Achievement" class.
 Edit this script to alter the functionality of achievements.
-Each achievement stores a name, ID, and description, whether or not it is unlocked, 
+Each achievement stores a name, description, whether or not it is unlocked, 
 as well as a list of triggers which act as the unlock requirements.
 */
 public class Achievement
@@ -37,12 +37,9 @@ public class Achievement
         }
     }
     private bool IsUnlocked;
-    public bool isUnlocked {get; set;}
+    public bool isUnlocked {get {return IsUnlocked;} set {IsUnlocked=value;}}
     private List<Trigger> AchievementTriggers = new List<Trigger>();
-    public List<Trigger> achievementTriggers
-    {
-        get {return AchievementTriggers;}
-    }
+    public List<Trigger> achievementTriggers {get {return AchievementTriggers;} set {AchievementTriggers=value;}}
     public Achievement(string achievementName, string achievementDescription, 
     bool isUnlocked=false)
     {
@@ -58,11 +55,6 @@ public class Achievement
     public void RemoveAchievementTrigger(Trigger triggerToRemove)
     {
         AchievementTriggers.Remove(new Trigger(triggerToRemove.triggerName));
-    }
-    public void UnlockAchievement()
-    {
-        IsUnlocked=true;
-        //IMPLEMENT THIS!!! Call to whatever script does funny ui stuff and sound. 
     }
 }
 

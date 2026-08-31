@@ -5,24 +5,27 @@ using System.Collections;
 
 /*
 Data Script which stores and allows access to all of the triggers in the game.
-As triggers are implemented, they will be added here.
 */
 public static class TriggerData
 {
     private static string triggerNamesPath = Path.Combine(Application.streamingAssetsPath, "triggerNames.txt");
-    private static List<Trigger> ALL_TRIGGERS = new List<Trigger>();
+    private static List<Trigger> AllTriggers = new List<Trigger>();
+    public static List<Trigger> allTriggers {get {return AllTriggers;} private set {AllTriggers=value;}}
     
     public static Trigger GetTrigger(string nameToFind){
-        return ALL_TRIGGERS.Find(i => i.triggerName == nameToFind);
+        return AllTriggers.Find(i => i.triggerName == nameToFind);
     }
     public static Trigger GetTrigger(int index){
-        return ALL_TRIGGERS[index];
+        return AllTriggers[index];
+    }
+    public static void SetTrigger(string triggerNameToSet, bool value){
+        AllTriggers.Find(i => i.triggerName == triggerNameToSet).isTriggered=value;
     }
     public static void init()
     {
         string[] temp = File.ReadAllLines(triggerNamesPath);
         for(int i=0;i<temp.Length;i++){
-            ALL_TRIGGERS.Add(new Trigger(temp[i]));
+            AllTriggers.Add(new Trigger(temp[i]));
         }
     }
 }
