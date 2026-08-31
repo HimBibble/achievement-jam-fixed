@@ -10,7 +10,7 @@ as well as a list of triggers which act as the unlock requirements.
 public class Achievement
 {
     private string AchievementName;
-    public string achievementName 
+    public string achievementName
     {
         get {return AchievementName;}
         set 
@@ -38,14 +38,15 @@ public class Achievement
     }
     private bool IsUnlocked;
     public bool isUnlocked {get {return IsUnlocked;} set {IsUnlocked=value;}}
-    private List<Trigger> AchievementTriggers = new List<Trigger>();
+    private List<Trigger> AchievementTriggers=new List<Trigger>();
     public List<Trigger> achievementTriggers {get {return AchievementTriggers;} set {AchievementTriggers=value;}}
-    public Achievement(string achievementName, string achievementDescription, 
-    bool isUnlocked=false)
+    public Achievement(string achievementName, string achievementDescription, List<Trigger> achievementTriggers/*,
+    bool isUnlocked=false*/)
     {
         this.achievementName=achievementName;
         this.achievementDescription=achievementDescription;
-        this.isUnlocked=isUnlocked;
+        this.achievementTriggers=achievementTriggers;
+        //this.isUnlocked=isUnlocked;
     }
     
     public void AddAchievementTrigger(Trigger triggerToAdd)

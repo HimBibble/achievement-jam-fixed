@@ -1,0 +1,59 @@
+Walk right!;Walk to the right.;MoveRight
+Walk Left!;Walk to the left.;MoveLeft
+Walk Up!;Walk upwards;MoveUp
+Walk Down!;Walk downwards;MoveDown
+Squawk!;Press the [Squawk Key];Squawk
+Morning Voice;Press the [Squawk Key]5 times;Squawk5
+Upcoming Singer;Press the [Squawk Key] 50 times;Squawk50
+Jump Start;Press the [Jump Key];Jump
+Hip Hop;Press the [Jump Key] 5 times;Jump5
+"Spring" Chicken;Press the [Jump Key] 50 times;Jump50
+R.I.P;Die for the first time;Die
+Fatality;Die 5 times;Die5
+The meaning of ...life?;Die 42 times;Die42
+That was fast.;Die within 5 seconds of spawning;DieIn5s
+Livin';Stay alive for 10 seconds;Alive10s
+Survivin';Stay alive for 30 seconds;Alive30s
+Dolania Americana;Stay alive for 5 minutes.;Alive300s
+Gradius Fan;Enter the Konami Code.;KonamiCode
+One!;Press the number 1.;Key1
+Two!;Press the number 2.;Key2
+Three!;Press the number 3.;Key3
+Four!;Press the number 4.;Key4
+Five!;Press the number 5.;Key5
+Six!;Press the number 6.;Key6
+Seven!;Press the number 7.;Key7
+Eight!;Press the number 8.;Key8
+Nine!;Press the number 9.;Key9
+Zero.;Press the number 0.;Key0
+TOKI WO TOMARE;Pause the game.;Pause
+Toki Wa Ugokidasu;Resume the game.;Unpause
+Wilhelm!;Fall off the map.;VoidOut
+Silent Nighthawk;Don't squawk for 1 minute.;NoSquawk60
+It's big, it's heavy;Touch a tree.;CollideTree
+Quiet down now.;Lower the games audio;DecreaseAudio
+I worked hard on the song y'know?;Mute the game.;MuteAudio
+Turn it up!;Raise the games audio.;IncreaseVolume
+I;Earn your first achievement.;Achievement
+X;Earn ten achievements.;Achievement10
+L;Earn fifty achievements.;Achievement50
+Clicky;Click the game.;LeftMouse
+That's right.;Right click the game.;RightMouse
+MOUSE3;Middle click the game.;MiddleMouse
+My favorite spot.;Find the developers fav spot.;SecretSpotFeed
+Ring a Ring o' Roses;Find the circle of flowers.;FlowerRing
+OM NOM;Feed a venus flytrap.;Flytrap
+Second Course;Feed a venus flytrap twice.;FeedFlytrap2
+Three Square Meals a day;Feed a venus flytrap three times.;FeedFlytrap3
+Feed me more Seymour!;Feed a venus flytrap four times.;FeedFlytrap4
+Gobble Gobble;Feed a venus flytrap five times.;FeedFlytrap5
+Adjustment;Open the settings menu;SettingsMenu
+That's who made this!;Look at the credits.;CreditsMenu
+devachievement1;Click on (dev name);ClickDevAngel
+devachievement2;Click on (dev name);ClickDevChristian
+devachievement3;Click on (dev name);ClickDevDaniel
+devachievement4;Click on (dev name);ClickDevNathan
+devachievement5;Click on (dev name);ClickDevThai
+Oops.;Crush a flower;TrampleFlower
+Black Thumb;Crush 5 flowers.;TrampleFlower5
+Blossom Buster;Crush all the flowers.;TrampleFlowerAll

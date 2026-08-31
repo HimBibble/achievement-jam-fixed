@@ -9,30 +9,39 @@ Data Script which stores and allows access to all of the achievements in the gam
 */
 public static class AchievementData
 {
-    private static string ACHIEVEMENT_NAMES_PATH = Path.Combine(Application.streamingAssetsPath, "achievementNames.txt");
-    private static string ACHIEVEMENT_DESCRIPTIONS_PATH = Path.Combine(Application.streamingAssetsPath, "achievementDescriptions.txt");
-    private static List<Achievement> AllAchievements = new List<Achievement>();
-    public static List<Achievement> allAchievements {get {return AllAchievements;} private set {AllAchievements=value;}}
+    private static string ACHIEVEMENT_DATA_PATH = Path.Combine(Application.streamingAssetsPath, "achievementData.txt");
+    private static List<Achievement> LockedAchievements = new List<Achievement>();
+    public static List<Achievement> lockedAchievements {get {return LockedAchievements;} private set {LockedAchievements=value;}}
+    private static List<Achievement> UnlockedAchievements = new List<Achievement>();
+    public static List<Achievement> unlockedAchievements {get {return UnlockedAchievements;} private set {UnlockedAchievements=value;}}
     public static Achievement GetAchievement(string nameToFind)
     {
-        return AllAchievements.Find(i => i.achievementName == nameToFind);
-    }
-    public static Achievement GetAchievement(int index){
-        return AllAchievements[index];
+        Achievement foundAchievement = UnlockedAchievements.Find(i => i.achievementName == nameToFind);
+        if(foundAchievement!=null){return foundAchievement;}
+        else
+        {
+            return(LockedAchievements.Find(i => i.achievementName == nameToFind));
+        }
+        
     }
     public static void UnlockAchievement(Achievement achievementToUnlock)
     {
-        AllAchievements.Find(i => i == achievementToUnlock).isUnlocked=true; // unlocks matching achievement
-        Debug.Log("achievement "+achievementToUnlock.achievementName+" unlocked!");
-        //Call to whatever code does the funny ui stuff when achievement is unlocked
+        LockedAchievements.Remove(achievementToUnlock);
+        UnlockedAchievements.Add(achievementToUnlock);
+        Debug.Log("Achievement: "+achievementToUnlock.achievementName+" unlocked!");
+        //call to code for funny ui stuff when unlocking achievements
     }
     public static void init()
     {
-        string[] temp1 = File.ReadAllLines(ACHIEVEMENT_NAMES_PATH);
-        string[] temp2 = File.ReadAllLines(ACHIEVEMENT_DESCRIPTIONS_PATH);
-        for(int i=0;i<temp1.Length;i++){
-            AllAchievements.Add(new Achievement(temp1[i],temp2[i]));
-            AllAchievements[i].AddAchievementTrigger(TriggerData.GetTrigger(i));
+        string[] temp1 = File.ReadAllLines(ACHIEVEMENT_DATA_PATH);
+        for(int i=0;i<temp1.Length;i++)
+        {
+            string[] temp2 = temp1[i].Split(";");
+            LockedAchievements.Add(new Achievement(temp2[0],temp2[1],new List<Trigger>()));
+            for(int j=2;j<temp2.Length;j++)
+            {
+                LockedAchievements[i].AddAchievementTrigger(TriggerData.GetOffTrigger(temp2[j]));
+            }
         }
     }
 }

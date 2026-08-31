@@ -3,57 +3,70 @@ using System.Collections.Generic;
 using System.IO;
 using System.Collections;
 
-public class Test : MonoBehaviour
+public class AchievementChecker : MonoBehaviour
 {
-    private int frameTimer=0; //used to delay achievement checks
-    private List<Trigger> satisfiedTriggers=new List<Trigger>(); //stores triggers with an isTriggered value of true
-    private List<Achievement> lockedAchievements = AchievementData.allAchievements;
+    private static int unlockCounter=0;
+    private static List<Achievement> achievementsToUnlock=new List<Achievement>();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         TriggerData.init();
         AchievementData.init();
+        foreach(Achievement achievement in AchievementData.lockedAchievements){
+        //Debug.Log(achievement.achievementName+": "+achievement.achievementDescription+" Unlocked by: "+achievement.achievementTriggers[0].triggerName);
+        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        frameTimer++;
-        // Checking for achievements is somewhat computationally expensive, so it doesn't need to run every frame
         // It is more efficient to check for individual achievements when relevant triggers flip, but it's annoying to keep up with
-        if(frameTimer>5)
+        if(TriggerData.onTriggers.Count>0)
         {
-            frameTimer=0;
-            foreach(Trigger trigger in TriggerData.allTriggers)
+            // this looks like a pretty nasty nested loop, but remember that each achievement only has at most one trigger currently
+            foreach(Achievement lockedAchievement in AchievementData.lockedAchievements)
             {
-                if(trigger.isTriggered==true)
+                int triggersToSatisfy=lockedAchievement.achievementTriggers.Count;
+                foreach(Trigger onTrigger in TriggerData.onTriggers)
                 {
-                    satisfiedTriggers.Add(trigger);
-                }
-            }
-            if(satisfiedTriggers.Count>0)
-            {
-                // this looks like a pretty nasty nested loop, but remember that each achievement only has one trigger currently
-                foreach(Achievement lockedAchievement in lockedAchievements)
-                {
-                    int triggersToSatisfy=lockedAchievement.achievementTriggers.Count;
-                    foreach(Trigger satisfiedTrigger in satisfiedTriggers)
+                    foreach(Trigger unlockTrigger in lockedAchievement.achievementTriggers)
                     {
-                        foreach(Trigger unlockTrigger in lockedAchievement.achievementTriggers)
+                        //Debug.Log("Checking achievement: "+lockedAchievement.achievementName+ " for trigger: "+unlockTrigger.triggerName);
+                        if(onTrigger.triggerName==unlockTrigger.triggerName)
                         {
-                            //Debug.Log("Checking achievement: "+lockedAchievement.achievementName+ " for trigger: "+unlockTrigger.triggerName);
-                            if(satisfiedTrigger==unlockTrigger)
-                            {
-                                triggersToSatisfy--;
-                            }
+                            triggersToSatisfy--;
                         }
                     }
-                    if(triggersToSatisfy==0)
+                }
+                if(triggersToSatisfy==0)
+                {
+                    //queues achievement for unlocking after update loop is finished and will not add duplicates
+                    if (!achievementsToUnlock.Contains(lockedAchievement)) {achievementsToUnlock.Add(lockedAchievement);}
+                    unlockCounter++;
+                    //check for achievements unlocked from having a certain number of achievements
+                    if(unlockCounter==1){
+                        TriggerData.SetTrigger("Achievement",true);
+                    }
+                    else if(unlockCounter==10){
+                        TriggerData.SetTrigger("Achievement10",true);
+                    }
+                    else if(unlockCounter==50){
+                        TriggerData.SetTrigger("Achievement50",true);
+                    }
+                    else
                     {
-                        AchievementData.UnlockAchievement(lockedAchievement);
+                        TriggerData.SetTrigger("Achievement",false);
+                        TriggerData.SetTrigger("Achievement10",false);
+                        TriggerData.SetTrigger("Achievement50",false);
                     }
                 }
             }
+        }
+        for(int i =0;i<achievementsToUnlock.Count;i++)
+        {
+            AchievementData.UnlockAchievement(achievementsToUnlock[i]);
+            achievementsToUnlock.RemoveAt(i);
         }
     }
 }
