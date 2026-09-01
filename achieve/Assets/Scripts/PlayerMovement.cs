@@ -29,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
         rb.linearVelocity = new Vector2(moveh, movev);
 
         Vector2 direction = new Vector2(moveh, movev);
-        FindObjectOfType<PlayerAnimation>().SetDirection(direction);
+        FindAnyObjectByType<PlayerAnimation>().SetDirection(direction);
+        // ^you were using a deprecated function but this one seems to do the same thing so I went ahead and changed it
     }
 }

@@ -8,13 +8,13 @@ public class AchievementChecker : MonoBehaviour
     private static int unlockCounter=0;
     private static List<Achievement> achievementsToUnlock=new List<Achievement>();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
         TriggerData.init();
         AchievementData.init();
-        foreach(Achievement achievement in AchievementData.lockedAchievements){
-        //Debug.Log(achievement.achievementName+": "+achievement.achievementDescription+" Unlocked by: "+achievement.achievementTriggers[0].triggerName);
-        }
+        /*foreach(Achievement achievement in AchievementData.lockedAchievements){
+        Debug.Log(achievement.achievementName+": "+achievement.achievementDescription+" Unlocked by: "+achievement.achievementTriggers[0].triggerName);
+        }*/
 
     }
 

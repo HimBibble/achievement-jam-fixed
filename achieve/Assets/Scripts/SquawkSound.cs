@@ -3,6 +3,7 @@ using UnityEngine;
 public class SquawkSound : MonoBehaviour
 {
     public AudioSource squawksound;
+    private int squawkCount=0;//needed for achievement trigger
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,6 +16,15 @@ public class SquawkSound : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             squawksound.Play();
+            //adding in squawk count
+            squawkCount++;
         }
+        //adding in squawk achievement triggers
+        if(squawkCount==1){TriggerData.SetTrigger("Squawk",true);}
+        else{TriggerData.SetTrigger("Squawk",false);}
+        if(squawkCount==5){TriggerData.SetTrigger("Squawk5",true);}
+        else{TriggerData.SetTrigger("Squawk5",false);}
+        if(squawkCount==50){TriggerData.SetTrigger("Squawk50",true);}
+        else{TriggerData.SetTrigger("Squawk50",false);}
     }
 }
