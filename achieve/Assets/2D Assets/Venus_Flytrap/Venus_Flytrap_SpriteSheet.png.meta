@@ -5,6 +5,21 @@ TextureImporter:
   - first:
       213: -3704120580074958921
     second: Venus_Flytrap_SpriteSheet_0
+  - first:
+      213: -9007799774098846026
+    second: Venus_Flytrap_SpriteSheet_1
+  - first:
+      213: 7600707867081767152
+    second: Venus_Flytrap_SpriteSheet_2
+  - first:
+      213: -6114744124499970318
+    second: Venus_Flytrap_SpriteSheet_3
+  - first:
+      213: -3588805581735471538
+    second: Venus_Flytrap_SpriteSheet_4
+  - first:
+      213: 7585128263198251469
+    second: Venus_Flytrap_SpriteSheet_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -148,10 +163,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 50469818678c4e8419cbcacf97cda679
-      internalID: 2031844843
+      spriteID: 6be8ef0b4ddddf280800000000000000
+      internalID: -9007799774098846026
       vertices: []
       indices: 
       edges: []
@@ -170,10 +185,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7c79c75cfcc405b4596f044d7053afda
-      internalID: -2044022246
+      spriteID: 0f8fceae8832b7960800000000000000
+      internalID: 7600707867081767152
       vertices: []
       indices: 
       edges: []
@@ -192,10 +207,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 04e7954546f975647bb46696b33f56a1
-      internalID: 417017020
+      spriteID: 2f6b5c6bd90142ba0800000000000000
+      internalID: -6114744124499970318
       vertices: []
       indices: 
       edges: []
@@ -214,10 +229,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5b9689f6afa80894bbc86464902e05e5
-      internalID: 1324589933
+      spriteID: e46d7b47650023ec0800000000000000
+      internalID: -3588805581735471538
       vertices: []
       indices: 
       edges: []
@@ -236,10 +251,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4b4384aa250ee55448f8f303cb8c7866
-      internalID: -1043298418
+      spriteID: dc915b7b7f9c34960800000000000000
+      internalID: 7585128263198251469
       vertices: []
       indices: 
       edges: []
@@ -248,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 814a545cb1539de4bb208ee28fbde594
+    spriteID: aac491dfb30f2cb4f8cbfe6800372fc0
     internalID: 0
     vertices: []
     indices: 
@@ -261,11 +276,11 @@ TextureImporter:
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":850.0,"y":650.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Venus_Flytrap_SpriteSheet_0: -3704120580074958921
-      Venus_Flytrap_SpriteSheet_1: 2031844843
-      Venus_Flytrap_SpriteSheet_2: -2044022246
-      Venus_Flytrap_SpriteSheet_3: 417017020
-      Venus_Flytrap_SpriteSheet_4: 1324589933
-      Venus_Flytrap_SpriteSheet_5: -1043298418
+      Venus_Flytrap_SpriteSheet_1: -9007799774098846026
+      Venus_Flytrap_SpriteSheet_2: 7600707867081767152
+      Venus_Flytrap_SpriteSheet_3: -6114744124499970318
+      Venus_Flytrap_SpriteSheet_4: -3588805581735471538
+      Venus_Flytrap_SpriteSheet_5: 7585128263198251469
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
