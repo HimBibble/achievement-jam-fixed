@@ -18,6 +18,8 @@ public class SquawkSound : MonoBehaviour
             squawksound.Play();
             //adding in squawk count
             squawkCount++;
+            //calling interact via squawking
+            this.gameObject.GetComponent<PlayerInteract>().SquawkInteract();
         }
         //adding in squawk achievement triggers
         if(squawkCount==1){TriggerData.SetTrigger("Squawk",true);}

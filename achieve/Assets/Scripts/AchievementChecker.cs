@@ -12,9 +12,9 @@ public class AchievementChecker : MonoBehaviour
     {
         TriggerData.init();
         AchievementData.init();
-        /*foreach(Achievement achievement in AchievementData.lockedAchievements){
-        Debug.Log(achievement.achievementName+": "+achievement.achievementDescription+" Unlocked by: "+achievement.achievementTriggers[0].triggerName);
-        }*/
+        foreach(Achievement achievement in AchievementData.lockedAchievements){
+        //Debug.Log(achievement.achievementName+": "+achievement.achievementDescription+" Unlocked by: "+achievement.achievementTriggers[0].triggerName);
+        }
 
     }
 
@@ -22,7 +22,7 @@ public class AchievementChecker : MonoBehaviour
     void Update()
     {
         // It is more efficient to check for individual achievements when relevant triggers flip, but it's annoying to keep up with
-        if(TriggerData.onTriggers.Count>0)
+        if(TriggerData.onTriggers.Count>0/*&&AchievementData.isInitialized*/)
         {
             // this looks like a pretty nasty nested loop, but remember that each achievement only has at most one trigger currently
             foreach(Achievement lockedAchievement in AchievementData.lockedAchievements)
@@ -43,7 +43,6 @@ public class AchievementChecker : MonoBehaviour
                 {
                     //queues achievement for unlocking after update loop is finished and will not add duplicates
                     if (!achievementsToUnlock.Contains(lockedAchievement)) {achievementsToUnlock.Add(lockedAchievement);}
-                    unlockCounter++;
                     //check for achievements unlocked from having a certain number of achievements
                     if(unlockCounter==1){
                         TriggerData.SetTrigger("Achievement",true);
@@ -63,10 +62,11 @@ public class AchievementChecker : MonoBehaviour
                 }
             }
         }
-        for(int i =0;i<achievementsToUnlock.Count;i++)
+        for(int i=achievementsToUnlock.Count-1;i>0;i--)
         {
             AchievementData.UnlockAchievement(achievementsToUnlock[i]);
             achievementsToUnlock.RemoveAt(i);
+            unlockCounter++;
         }
     }
 }

@@ -1,23 +1,35 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public abstract class Interactable : MonoBehaviour
 {
-    private float InteractCooldown;
-    public float interactCooldown {get{return InteractCooldown;} set{InteractCooldown=value;}}
-    private string InteractMethod;
-    public string interactMethod {get{return InteractMethod;} set{InteractMethod=value;}}
+    protected float InteractTimer;
+    public float interactTimer {get{return InteractTimer;} protected set{InteractTimer=value;}}
+    protected float InteractCooldown;
+    public float interactCooldown {get{return InteractCooldown;} protected set{InteractCooldown=value;}}
+    protected string assetPath;
+    protected int currentSprite=1;
+    protected List <Sprite> spriteStates;
 
     public abstract void Interact();
     private void Start()
     {
-        this.gameObject.tag=interactMethod;
-        /*if(this.gameObject.tag=="Overlap")
-        {
-            
-        }
-        else if(this.gameObject.tag=="Squawk")
-        {
-            
-        }*/
+        
+    }
+    public void PlayAnimation()
+    {
+
+    }
+    public void TransitionSprite()
+    {
+        if(currentSprite<spriteStates.Count){currentSprite++;}
+    }
+    public void UpdateSprite()
+    {
+        this.gameObject.GetComponent<SpriteRenderer>().sprite=spriteStates[currentSprite];
+    }
+    public Sprite ObjectToSprite(Object objToConvert)
+    {
+        return (objToConvert as Sprite);
     }
 }

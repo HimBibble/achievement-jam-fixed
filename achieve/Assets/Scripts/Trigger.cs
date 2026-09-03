@@ -28,12 +28,12 @@ public class Trigger
             else {TriggerName = value;} //fills variable TriggerName with implicit string argument value
         }
     }
-    private bool IsTriggered;
-    public bool isTriggered {get {return IsTriggered;} set {IsTriggered=value;}}
-    public Trigger(string triggerName, bool isTriggered=false)
+    /*private bool IsTriggered;
+    public bool isTriggered {get {return IsTriggered;} set {IsTriggered=value;}}*/
+    public Trigger(string triggerName/*, bool isTriggered=false*/)
     {
         this.triggerName=triggerName; //calls setter from property triggerName
-        this.isTriggered=isTriggered; //calls setter from property isTriggered
+        //this.isTriggered=isTriggered; //calls setter from property isTriggered
         
     }
 }

@@ -14,6 +14,8 @@ public static class AchievementData
     public static List<Achievement> lockedAchievements {get {return LockedAchievements;} private set {LockedAchievements=value;}}
     private static List<Achievement> UnlockedAchievements = new List<Achievement>();
     public static List<Achievement> unlockedAchievements {get {return UnlockedAchievements;} private set {UnlockedAchievements=value;}}
+    /*private static bool IsInitialized=false;
+    public static bool isInitialized {get; set;}*/
     public static Achievement GetAchievement(string nameToFind)
     {
         Achievement foundAchievement = UnlockedAchievements.Find(i => i.achievementName == nameToFind);
@@ -43,5 +45,6 @@ public static class AchievementData
                 LockedAchievements[i].AddAchievementTrigger(TriggerData.GetOffTrigger(temp2[j]));
             }
         }
+        //isInitialized=true;
     }
 }

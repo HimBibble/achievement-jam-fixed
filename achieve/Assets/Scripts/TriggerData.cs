@@ -29,14 +29,13 @@ public static class TriggerData
     public static void SetTrigger(string triggerNameToSet, bool value){
         if(value==false)
         {
-            Trigger trigger=OffTriggers.Find(i => i.triggerName == triggerNameToSet);
+            Trigger trigger=OnTriggers.Find(i => i.triggerName == triggerNameToSet);
             if(trigger!=null)
             {
                 //remove trigger from onTriggers and add it to offTriggers
                 OnTriggers.Remove(trigger);
                 OffTriggers.Add(trigger);
             }
-
         }
         else
         {

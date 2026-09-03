@@ -43,10 +43,10 @@ MOUSE3;Middle click the game.;MiddleMouse
 My favorite spot.;Find the developers fav spot.;SecretSpotFeed
 Ring a Ring o' Roses;Find the circle of flowers.;FlowerRing
 OM NOM;Feed a venus flytrap.;Flytrap
-Second Course;Feed a venus flytrap twice.;FeedFlytrap2
-Three Square Meals a day;Feed a venus flytrap three times.;FeedFlytrap3
-Feed me more Seymour!;Feed a venus flytrap four times.;FeedFlytrap4
-Gobble Gobble;Feed a venus flytrap five times.;FeedFlytrap5
+Second Course;Feed a venus flytrap twice.;Flytrap2
+Three Square Meals a day;Feed a venus flytrap three times.;Flytrap3
+Feed me more Seymour!;Feed a venus flytrap four times.;Flytrap4
+Gobble Gobble;Feed a venus flytrap five times.;Flytrap5
 Adjustment;Open the settings menu;SettingsMenu
 That's who made this!;Look at the credits.;CreditsMenu
 devachievement1;Click on (dev name);ClickDevAngel
