@@ -3,6 +3,9 @@ using System.Collections;
 
 public class PlayerInteract : MonoBehaviour
 {
+    //Daniel's Code
+    [SerializeField] private Death killPlayer;
+    //
     private float interactionRadius = 10;
     public void SquawkInteract()
     {
@@ -19,6 +22,9 @@ public class PlayerInteract : MonoBehaviour
         if(otherGameObject.gameObject.tag=="Collision")
         {
             otherGameObject.GetComponent<Flytrap>().Interact();
+            //Daniel's Code
+            killPlayer.Kill();
+            //
         }
     }
 }
