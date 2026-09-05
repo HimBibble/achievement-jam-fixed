@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c4526c21a5ad3e46be657476fd55595, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerDeath
-  DEATH_SOUND: {fileID: 0}
+  DEATH_SOUND: {fileID: 8300000, guid: f4175549145bc164f8646b389776e3a3, type: 3}
 --- !u!1 &3536451317675707038
 GameObject:
   m_ObjectHideFlags: 0
