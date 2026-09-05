@@ -304,7 +304,6 @@ GameObject:
   - component: {fileID: 697930108}
   - component: {fileID: 697930109}
   - component: {fileID: 697930110}
-  - component: {fileID: 697930111}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -324,7 +323,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1189000020}
   m_Father: {fileID: 1566330997}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &697930108
@@ -374,7 +374,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -277153921769468689, guid: 6c8231d58eab4434bb2c4b34e0f8f31f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -431,21 +431,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &697930111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 697930106}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b88a11dfa6d48742927f77dd4aeff46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::JumpAnimation
-  playerTransform: {fileID: 1566330997}
-  Velocity: 0
-  distance: 0
 --- !u!1 &703891165
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,7 +635,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1566330997}
+  m_Father: {fileID: 697930107}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1189000022
 MonoBehaviour:
@@ -733,8 +718,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   speed: 10
-  Velocity: 0
-  distance: 0
 --- !u!50 &1566330996
 Rigidbody2D:
   serializedVersion: 5
@@ -776,7 +759,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 697930107}
-  - {fileID: 1189000020}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1566330998
