@@ -3,28 +3,22 @@ using System.Collections;
 
 public class PlayerInteract : MonoBehaviour
 {
-    //Daniel's Code
-    [SerializeField] private Death killPlayer;
-    //
     private float interactionRadius = 10;
     public void SquawkInteract()
     {
-        Collider[] hitColliders = Physics.OverlapSphere(this.gameObject.transform.position, interactionRadius);
-        foreach (Collider hitCollider in hitColliders)
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(this.gameObject.transform.position, interactionRadius);
+        foreach (Collider2D hitCollider in hitColliders)
         {
             GameObject hitGameObject = hitCollider.gameObject;
-            if(hitGameObject.tag=="Squawk"){hitGameObject.GetComponent<Interactable>().Interact();}
+            if(hitGameObject.tag=="Squawk"){hitGameObject.GetComponent<TreeTile>().Interact();}
         }
     }
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collider)
     {
-        GameObject otherGameObject=collision.gameObject;
+        GameObject otherGameObject=collider.gameObject;
         if(otherGameObject.gameObject.tag=="Collision")
         {
-            otherGameObject.GetComponent<Flytrap>().Interact();
-            //Daniel's Code
-            killPlayer.Kill();
-            //
+            //otherGameObject.GetComponent<FlowerTile>().Interact();
         }
     }
 }

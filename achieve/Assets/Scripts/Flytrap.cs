@@ -6,12 +6,12 @@ using System;
 
 public class Flytrap : Interactable
 {
-    
     private GameObject player;
     static int nomCount=0; //how many times the player has been eaten
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        player = GameObject.Find("Player");
         ASSET_PATH = "Assets/2D Assets/Venus_Flytrap/Venus_Flytrap_SpriteSheet.png";
         interactCooldown=0.5f;
         this.gameObject.tag="Collision";
@@ -29,6 +29,7 @@ public class Flytrap : Interactable
         if(interactTimer<=0f && nomCount < 5)
         {
             nomCount++;
+            player.GetComponent<PlayerDeath>().Kill();
             TransitionSprite();
             UpdateSprite();
             if(nomCount==1){TriggerData.SetTrigger("Flytrap",true);}
