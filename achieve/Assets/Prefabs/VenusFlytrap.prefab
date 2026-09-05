@@ -107,6 +107,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8c49d5869cfdeae8a36eda7cfa03b7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Flytrap
+  spriteStates:
+  - {fileID: -3704120580074958921, guid: 485ed962bd9fc99418d53bf0dcf2e481, type: 3}
+  - {fileID: -9007799774098846026, guid: 485ed962bd9fc99418d53bf0dcf2e481, type: 3}
+  - {fileID: 7600707867081767152, guid: 485ed962bd9fc99418d53bf0dcf2e481, type: 3}
+  - {fileID: -6114744124499970318, guid: 485ed962bd9fc99418d53bf0dcf2e481, type: 3}
+  - {fileID: -3588805581735471538, guid: 485ed962bd9fc99418d53bf0dcf2e481, type: 3}
+  - {fileID: 7585128263198251469, guid: 485ed962bd9fc99418d53bf0dcf2e481, type: 3}
 --- !u!70 &303233619680445199
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

@@ -10,9 +10,9 @@ public abstract class Interactable : MonoBehaviour
     protected string ASSET_PATH;
     protected string ANIM_PATH;
     protected int currentSpriteIndex=0;
-    protected int[] spriteIndexes;
+    //protected int spriteIndexes;
     protected static GameObject player;
-    protected List <Sprite> spriteStates;
+    [SerializeField] protected List <Sprite> spriteStates;
 
     public abstract void Interact();
     protected void Start()
@@ -25,11 +25,11 @@ public abstract class Interactable : MonoBehaviour
     }
     public void TransitionSprite()
     {
-        if(currentSpriteIndex<spriteIndexes.Length){currentSpriteIndex++;}
+        if(currentSpriteIndex<spriteStates.Count){currentSpriteIndex++;}
     }
     public void UpdateSprite()
     {
-        this.gameObject.GetComponent<SpriteRenderer>().sprite=spriteStates[spriteIndexes[currentSpriteIndex]];
+        this.gameObject.GetComponent<SpriteRenderer>().sprite=spriteStates[currentSpriteIndex];
     }
     public Sprite ObjectToSprite(Object objToConvert)
     {

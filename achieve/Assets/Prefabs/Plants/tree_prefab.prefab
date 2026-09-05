@@ -107,6 +107,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1937f93f8c6b9cb7bb8aca5251700500, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TreeTile
+  spriteStates:
+  - {fileID: 21300000, guid: bc148de1474e0f24690813f4a661ed32, type: 3}
 --- !u!70 &5213834858846149181
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

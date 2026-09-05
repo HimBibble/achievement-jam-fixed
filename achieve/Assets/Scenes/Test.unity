@@ -176,6 +176,47 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ebcf98e2047f75388c00b76437aef35, type: 3}
+--- !u!1 &121382205 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3163568833965580115, guid: 2bfae05e706bfd8e781ce93935845d80, type: 3}
+  m_PrefabInstance: {fileID: 1761085590}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &121382212
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121382205}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.25
 --- !u!1 &157312076
 GameObject:
   m_ObjectHideFlags: 0
@@ -875,6 +916,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2298815635075839556, guid: 2bfae05e706bfd8e781ce93935845d80, type: 3}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 3163568833965580115, guid: 2bfae05e706bfd8e781ce93935845d80, type: 3}
       propertyPath: m_Name
       value: Player
@@ -922,7 +967,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3163568833965580115, guid: 2bfae05e706bfd8e781ce93935845d80, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 121382212}
   m_SourcePrefab: {fileID: 100100000, guid: 2bfae05e706bfd8e781ce93935845d80, type: 3}
 --- !u!1 &1978855104
 GameObject:

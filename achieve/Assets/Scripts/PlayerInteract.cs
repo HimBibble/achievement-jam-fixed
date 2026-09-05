@@ -3,13 +3,14 @@ using System.Collections;
 
 public class PlayerInteract : MonoBehaviour
 {
-    private float interactionRadius = 10;
+    private float interactionRadius = 1;
     public void SquawkInteract()
     {
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(this.gameObject.transform.position, interactionRadius);
         foreach (Collider2D hitCollider in hitColliders)
         {
             GameObject hitGameObject = hitCollider.gameObject;
+            Debug.Log(hitGameObject.name);
             if(hitGameObject.tag=="Squawk"){hitGameObject.GetComponent<TreeTile>().Interact();}
         }
     }
@@ -18,7 +19,8 @@ public class PlayerInteract : MonoBehaviour
         GameObject otherGameObject=collider.gameObject;
         if(otherGameObject.gameObject.tag=="Collision")
         {
-            //otherGameObject.GetComponent<FlowerTile>().Interact();
+            if(otherGameObject.GetComponent<FlowerTile>()!=null){otherGameObject.GetComponent<FlowerTile>().Interact();}
+            else if(otherGameObject.GetComponent<Flytrap>()!=null){otherGameObject.GetComponent<Flytrap>().Interact();}
         }
     }
 }

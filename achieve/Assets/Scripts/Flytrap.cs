@@ -11,11 +11,11 @@ public class Flytrap : Interactable
     protected virtual void Start()
     {
         base.Start();
-        spriteIndexes = new int[] {0,2,6,3,4,5};
-        ASSET_PATH = "Assets/2D Assets/Venus_Flytrap/Venus_Flytrap_SpriteSheet.png";
+        //spriteIndexes = new int[] {0,2,6,3,4,5};
+        //ASSET_PATH = "Assets/2D Assets/Venus_Flytrap/Venus_Flytrap_SpriteSheet.png";
         interactCooldown=0.5f;
         this.gameObject.tag="Collision";
-        spriteStates = AssetDatabase.LoadAllAssetsAtPath(ASSET_PATH).ToList().ConvertAll(new Converter<UnityEngine.Object, Sprite>(ObjectToSprite)); //populates flytrapSprites with all the venus flytrap sprites
+        //spriteStates = AssetDatabase.LoadAllAssetsAtPath(ASSET_PATH).ToList().ConvertAll(new Converter<UnityEngine.Object, Sprite>(ObjectToSprite)); //populates flytrapSprites with all the venus flytrap sprites
         UpdateSprite();
     }
 
