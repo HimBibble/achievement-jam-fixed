@@ -18,7 +18,7 @@ public class PlayerInteract : MonoBehaviour
         GameObject otherGameObject=collider.gameObject;
         if(otherGameObject.gameObject.tag=="Collision")
         {
-            //otherGameObject.GetComponent<FlowerTile>().Interact();
+            otherGameObject.GetComponent<FlowerTile>().Interact();
         }
     }
 }
