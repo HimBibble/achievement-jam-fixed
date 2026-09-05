@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayButton : MonoBehaviour
+public class SettingsButton : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,8 +15,8 @@ public class PlayButton : MonoBehaviour
         
     }
 
-    public void Play()
+    public void Settings()
     {
-        SceneManager.LoadScene("Game");
+        
     }
 }

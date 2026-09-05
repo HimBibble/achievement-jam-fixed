@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private float moveh, movev;
     [SerializeField] private float speed = 1.0f;
+    public double Velocity = 0;
+    public double distance = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -32,5 +34,25 @@ public class PlayerMovement : MonoBehaviour
         Vector2 direction = new Vector2(moveh, movev);
         FindAnyObjectByType<PlayerAnimation>().SetDirection(direction);
         // ^you were using a deprecated function but this one seems to do the same thing so I went ahead and changed it
+
+        if (Input.GetKey(KeyCode.Space) && distance < 1)
+        {
+            Velocity = 5;
+        }
+        distance += Velocity * 0.1;
+        if (distance > 0)
+        {
+            rb.isKinematic = true;
+            if (Velocity > -10)
+            {
+                Velocity -= 0.1;
+            }
+        }
+        else
+        {
+            Velocity = 0;
+            distance = 0;
+            rb.isKinematic = false;
+        }
     }
 }

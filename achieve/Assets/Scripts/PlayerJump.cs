@@ -16,7 +16,7 @@ public class PlayerJump : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space) && distance < 1)
         {
-            Velocity = 10;
+            Velocity = 5;
         }
         distance += Velocity * 0.1;
         if (distance > 0)
