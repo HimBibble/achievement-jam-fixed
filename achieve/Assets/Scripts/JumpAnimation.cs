@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class JumpAnimation : MonoBehaviour
 {
+    public Transform playerTransform;
     public double Velocity = 0;
     public double distance = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -15,14 +16,14 @@ public class JumpAnimation : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space) && distance < 1)
         {
-            Velocity = 10;
+            Velocity = 6;
         }
         distance += Velocity * 0.1;
         if (distance > 0)
         {
             if (Velocity > -10)
             {
-                Velocity -= 0.1;
+                Velocity -= 0.2;
             } 
         }
         else
@@ -30,9 +31,6 @@ public class JumpAnimation : MonoBehaviour
             Velocity = 0;
             distance = 0;
         }
-        if (distance < 10)
-        {
-            transform.position = new Vector2(0f, (float)distance);
-        }
+        transform.position = new Vector2(playerTransform.position.x, playerTransform.position.y + (float)distance);
     }
 }
