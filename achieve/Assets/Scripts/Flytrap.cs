@@ -6,13 +6,14 @@ using System;
 
 public class Flytrap : Interactable
 {
-    string ASSET_PATH = "Assets/2D Assets/Venus_Flytrap/Venus_Flytrap_SpriteSheet.png";
     private GameObject player;
     static int nomCount=0; //how many times the player has been eaten
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        interactCooldown=1.0f;
+        player = GameObject.Find("Player");
+        ASSET_PATH = "Assets/2D Assets/Venus_Flytrap/Venus_Flytrap_SpriteSheet.png";
+        interactCooldown=0.5f;
         this.gameObject.tag="Collision";
         spriteStates = AssetDatabase.LoadAllAssetsAtPath(ASSET_PATH).ToList().ConvertAll(new Converter<UnityEngine.Object, Sprite>(ObjectToSprite)); //populates flytrapSprites with all the venus flytrap sprites
         UpdateSprite();
@@ -25,9 +26,10 @@ public class Flytrap : Interactable
     }
     public override void Interact()
     {
-        if(interactTimer<=0f)
+        if(interactTimer<=0f && nomCount < 5)
         {
             nomCount++;
+            player.GetComponent<PlayerDeath>().Kill();
             TransitionSprite();
             UpdateSprite();
             if(nomCount==1){TriggerData.SetTrigger("Flytrap",true);}
@@ -40,7 +42,7 @@ public class Flytrap : Interactable
             else{TriggerData.SetTrigger("Flytrap4",false);}
             if(nomCount==5){TriggerData.SetTrigger("Flytrap5",true);}
             else{TriggerData.SetTrigger("Flytrap5",false);}
+            interactTimer=interactCooldown;
         }
-        interactTimer=interactCooldown;
     }
 }

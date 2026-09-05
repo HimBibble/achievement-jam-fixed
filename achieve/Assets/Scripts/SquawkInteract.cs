@@ -1,21 +1,26 @@
 using UnityEngine;
 
-public class SquawkSound : MonoBehaviour
+public class SquawkInteract : MonoBehaviour
 {
-    public AudioSource squawksound;
+    private AudioSource squawkSound;
+    [SerializeField] private AudioClip SQUAWK_SOUND;
     private int squawkCount=0;//needed for achievement trigger
+    public bool isDead=false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        squawksound = GetComponent<AudioSource>();
+        SQUAWK_SOUND=Resources.Load<AudioClip>("Assets/SFX/Squawk.mp3");
+        squawkSound = this.gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+
+        if (Input.GetKeyDown(KeyCode.E) && isDead==false)
         {
-            squawksound.Play();
+            squawkSound.clip = SQUAWK_SOUND;
+            squawkSound.Play();
             //adding in squawk count
             squawkCount++;
             //calling interact via squawking

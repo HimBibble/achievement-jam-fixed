@@ -30,7 +30,7 @@ TOKI WO TOMARE;Pause the game.;Pause
 Toki Wa Ugokidasu;Resume the game.;Unpause
 Wilhelm!;Fall off the map.;VoidOut
 Silent Nighthawk;Don't squawk for 1 minute.;NoSquawk60
-It's big, it's heavy;Touch a tree.;CollideTree
+It's big, it's heavy;Touch a tree.;InteractTree
 Quiet down now.;Lower the games audio;DecreaseAudio
 I worked hard on the song y'know?;Mute the game.;MuteAudio
 Turn it up!;Raise the games audio.;IncreaseVolume
