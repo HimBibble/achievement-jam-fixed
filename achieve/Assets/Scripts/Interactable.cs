@@ -9,13 +9,15 @@ public abstract class Interactable : MonoBehaviour
     public float interactCooldown {get{return InteractCooldown;} protected set{InteractCooldown=value;}}
     protected string ASSET_PATH;
     protected string ANIM_PATH;
-    protected int currentSprite=1;
+    protected int currentSpriteIndex=0;
+    protected int[] spriteIndexes;
+    protected static GameObject player;
     protected List <Sprite> spriteStates;
 
     public abstract void Interact();
-    private void Start()
+    protected void Start()
     {
-        
+        player=GameObject.Find("Player");
     }
     public void PlayAnimation()
     {
@@ -23,11 +25,11 @@ public abstract class Interactable : MonoBehaviour
     }
     public void TransitionSprite()
     {
-        if(currentSprite<spriteStates.Count){currentSprite++;}
+        if(currentSpriteIndex<spriteIndexes.Length){currentSpriteIndex++;}
     }
     public void UpdateSprite()
     {
-        this.gameObject.GetComponent<SpriteRenderer>().sprite=spriteStates[currentSprite];
+        this.gameObject.GetComponent<SpriteRenderer>().sprite=spriteStates[spriteIndexes[currentSpriteIndex]];
     }
     public Sprite ObjectToSprite(Object objToConvert)
     {

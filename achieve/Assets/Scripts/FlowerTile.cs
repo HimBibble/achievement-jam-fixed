@@ -8,13 +8,15 @@ public class FlowerTile : Interactable
 {
     static int flowersStomped=0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    protected virtual void Start()
     {
+        spriteIndexes = new int[] {0,7,2,4,3,5,8,6};
         ASSET_PATH = "Assets/2D Assets/Props/flowerSheet.png";
         interactCooldown=0.0f;
         this.gameObject.tag="Collision";
         spriteStates = AssetDatabase.LoadAllAssetsAtPath(ASSET_PATH).ToList().ConvertAll(new Converter<UnityEngine.Object, Sprite>(ObjectToSprite)); //populates spriteStates with all the flower sprites
-        currentSprite=(UnityEngine.Random.Range(1,3)*2-1); //selects a random flower as the non-crushed flowers are on indexes 1, 3, and 5
+        currentSpriteIndex = UnityEngine.Random.Range(0,4)*2;
+        TransitionSprite(); //0 purple/7 crushed, 2 blue/4 crushed, 3 yellow/5 crushed 8 white/6 crushed
         UpdateSprite();
     }
 

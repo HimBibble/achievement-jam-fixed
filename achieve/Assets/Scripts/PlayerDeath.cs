@@ -11,17 +11,16 @@ public class PlayerDeath : MonoBehaviour
     private static float respawnCooldown=2.0f;
     private static float respawnTimer=0f;
     static PlayerMovement playerMovement;
-    static PlayerJump playerJump;
-    static SquawkInteract squawkInteract;
+    //static PlayerJump playerJump;
+    static Squawk squawk;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        DEATH_SOUND=Resources.Load<AudioClip>("Assets/SFX/Player Death.mp3");
         soundSource= this.gameObject.GetComponent<AudioSource>();
         playerMovement = this.gameObject.GetComponent<PlayerMovement>();
-        playerJump = this.gameObject.GetComponent<PlayerJump>();
-        squawkInteract = this.gameObject.GetComponent<SquawkInteract>();
+        //playerJump = this.gameObject.GetComponent<PlayerJump>();
+        squawk = this.gameObject.GetComponent<Squawk>();
     }
 
     // Update is called once per frame
@@ -30,8 +29,8 @@ public class PlayerDeath : MonoBehaviour
         respawnTimer-=Time.deltaTime;
         if(respawnTimer<0)
         {
-            playerJump.isDead=false;
-            squawkInteract.isDead=false;
+            //playerJump.isDead=false;
+            squawk.isDead=false;
             playerMovement.isDead=false;
         }
     }
@@ -42,8 +41,8 @@ public class PlayerDeath : MonoBehaviour
         //play death animation
         soundSource.clip=DEATH_SOUND;
         soundSource.Play();
-        playerJump.isDead=true;
-        squawkInteract.isDead=true;
+        //playerJump.isDead=true;
+        squawk.isDead=true;
         playerMovement.isDead=true;
         if(respawnTimer>-5f){TriggerData.SetTrigger("DieIn5s",true);}
         else{TriggerData.SetTrigger("DieIn5s",false);}

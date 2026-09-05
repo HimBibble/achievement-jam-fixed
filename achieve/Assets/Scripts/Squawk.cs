@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SquawkInteract : MonoBehaviour
+public class Squawk : MonoBehaviour
 {
     private AudioSource squawkSound;
     [SerializeField] private AudioClip SQUAWK_SOUND;
@@ -9,7 +9,6 @@ public class SquawkInteract : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        SQUAWK_SOUND=Resources.Load<AudioClip>("Assets/SFX/Squawk.mp3");
         squawkSound = this.gameObject.GetComponent<AudioSource>();
     }
 
