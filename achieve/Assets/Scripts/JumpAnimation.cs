@@ -8,7 +8,7 @@ public class JumpAnimation : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        //playerTransform=GameObject.Find("Player").transform;
     }
 
     // Update is called once per frame

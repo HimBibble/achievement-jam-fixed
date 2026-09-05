@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9079835852590234117}
   - component: {fileID: 8357152834164811540}
   - component: {fileID: 1194114204107339663}
-  - component: {fileID: 1899623278788982614}
+  - component: {fileID: 7159835164233108344}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c78b30e875bcc542b4e5b59688738cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SquawkSound
-  SQUAWK_SOUND: {fileID: 0}
+  SQUAWK_SOUND: {fileID: 8300000, guid: 68a645db5d360d540955710a918ebfb2, type: 3}
   isDead: 0
 --- !u!82 &8357152834164811540
 AudioSource:
@@ -227,7 +227,7 @@ MonoBehaviour:
   Velocity: 0
   distance: 0
   isDead: 0
---- !u!114 &1899623278788982614
+--- !u!114 &7159835164233108344
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -236,12 +236,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3163568833965580115}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6972e5e386558634d8ddb1f8120957b5, type: 3}
+  m_Script: {fileID: 11500000, guid: e212d36ecc5724b828d652b2dbd6f0bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   moveh: 0
   movev: 0
-  speed: 10
+  speed: 1
   isDead: 0
 --- !u!1 &3536451317675707038
 GameObject:
@@ -394,5 +394,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b88a11dfa6d48742927f77dd4aeff46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  playerTransform: {fileID: 8588272136749861045}
   Velocity: 0
   distance: 0
