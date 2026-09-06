@@ -1,0 +1,521 @@
+fileFormatVersion: 2
+guid: 8c6a4591c58075e448a8cf44c3975493
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3188261836706581790
+    second: AchievementGetProtagDeath2_0
+  - first:
+      213: 3330792178170112653
+    second: AchievementGetProtagDeath2_1
+  - first:
+      213: -1636770493681297016
+    second: AchievementGetProtagDeath2_2
+  - first:
+      213: 763222733465345428
+    second: AchievementGetProtagDeath2_3
+  - first:
+      213: 4907303609997361874
+    second: AchievementGetProtagDeath2_4
+  - first:
+      213: 7786251882576393898
+    second: AchievementGetProtagDeath2_5
+  - first:
+      213: 5316045948726211810
+    second: AchievementGetProtagDeath2_6
+  - first:
+      213: 4409711720819804154
+    second: AchievementGetProtagDeath2_7
+  - first:
+      213: -4296102393720414405
+    second: AchievementGetProtagDeath2_8
+  - first:
+      213: -6661363590075273624
+    second: AchievementGetProtagDeath2_9
+  - first:
+      213: -5189907719471768884
+    second: AchievementGetProtagDeath2_10
+  - first:
+      213: -3500087308012218961
+    second: AchievementGetProtagDeath2_11
+  - first:
+      213: 1770052262025187527
+    second: AchievementGetProtagDeath2_12
+  - first:
+      213: 2222629162534885638
+    second: AchievementGetProtagDeath2_13
+  - first:
+      213: 3404776755120044074
+    second: AchievementGetProtagDeath2_14
+  - first:
+      213: 6978784004062119864
+    second: AchievementGetProtagDeath2_15
+  - first:
+      213: -4320731397185160117
+    second: AchievementGetProtagDeath2_16
+  - first:
+      213: 6653157809151323954
+    second: AchievementGetProtagDeath2_17
+  - first:
+      213: -6278914524724715026
+    second: AchievementGetProtagDeath2_18
+  - first:
+      213: -3805828351259468861
+    second: AchievementGetProtagDeath2_19
+  - first:
+      213: 1104228352043355862
+    second: AchievementGetProtagDeath2_20
+  - first:
+      213: 3898871556156565915
+    second: AchievementGetProtagDeath2_21
+  - first:
+      213: 998343794678687709
+    second: AchievementGetProtagDeath2_22
+  - first:
+      213: 2197476646962708447
+    second: AchievementGetProtagDeath2_23
+  - first:
+      213: 8246978985339148873
+    second: AchievementGetProtagDeath2_24
+  - first:
+      213: 2894373437841721350
+    second: AchievementGetProtagDeath2_25
+  - first:
+      213: 1117321642834446058
+    second: AchievementGetProtagDeath2_26
+  - first:
+      213: -4237190661327746948
+    second: AchievementGetProtagDeath2_27
+  - first:
+      213: -3808226114421095389
+    second: AchievementGetProtagDeath2_28
+  - first:
+      213: 3006011683002017649
+    second: AchievementGetProtagDeath2_29
+  - first:
+      213: -2251425107765820596
+    second: AchievementGetProtagDeath2_30
+  - first:
+      213: -1717669912808126999
+    second: AchievementGetProtagDeath2_31
+  - first:
+      213: 1606233229307697439
+    second: AchievementGetProtagDeath2_32
+  - first:
+      213: -917022431739950925
+    second: AchievementGetProtagDeath2_33
+  - first:
+      213: 1198155483249573614
+    second: AchievementGetProtagDeath2_34
+  - first:
+      213: 6004641524951840462
+    second: AchievementGetProtagDeath2_35
+  - first:
+      213: -5520957491938731205
+    second: AchievementGetProtagDeath2_36
+  - first:
+      213: -272564348619785816
+    second: AchievementGetProtagDeath2_37
+  - first:
+      213: -6192834052107883
+    second: AchievementGetProtagDeath2_38
+  - first:
+      213: -4105151676990471122
+    second: AchievementGetProtagDeath2_39
+  - first:
+      213: -7851593805844911739
+    second: AchievementGetProtagDeath2_40
+  - first:
+      213: -129522700368815497
+    second: AchievementGetProtagDeath2_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player_death_west_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1546
+        width: 710
+        height: 767
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5090a9a3c5416984bbe258a3845bde84
+      internalID: -1362261870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_death_west_1
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 1546
+        width: 710
+        height: 767
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115b9d6902c1b7642b003bffd94cb2a4
+      internalID: -236182158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_death_west_2
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 1546
+        width: 710
+        height: 767
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 563ff41a9f0105e4bac36c0d7166c1a5
+      internalID: 1857828896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_death_west_3
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 1546
+        width: 710
+        height: 767
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c3b5b682146464468302d1fdcbbc46d
+      internalID: -1209006295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_death_west_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 777
+        width: 710
+        height: 767
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9fb13bd0e6bb8f48bb70b2fe9e9c38d
+      internalID: 333570432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_death_west_5
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 777
+        width: 710
+        height: 767
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d06aedbee4ff7cb4997458a4fdd7bc78
+      internalID: 255302245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_death_west_6
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 777
+        width: 710
+        height: 767
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a4905737e63e647b91b45b6d4b7f78
+      internalID: 1581452076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_death_west_7
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 777
+        width: 710
+        height: 767
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51676414e6c01ba4d8bd071633d52e18
+      internalID: 1143866069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_death_west_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8
+        width: 710
+        height: 767
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8d18a9452b392438765d81aa028501
+      internalID: -201877375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_death_west_9
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 8
+        width: 710
+        height: 767
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab03c4e8be14a14a86b578ea571e4af
+      internalID: -673201647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_death_west_10
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 8
+        width: 710
+        height: 767
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bcbd026e80934a44961024af5e45ede
+      internalID: -1641881067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_death_west_11
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 8
+        width: 710
+        height: 767
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82c2a66f5d81ce42b845efb2a8bc5b4
+      internalID: -1667340546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e8b0073dd02e98141adf3bf889e9212d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":710.0,"y":767.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":2.0,"y":2.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      player_death_west_0: -1362261870
+      player_death_west_1: -236182158
+      player_death_west_10: -1641881067
+      player_death_west_11: -1667340546
+      player_death_west_2: 1857828896
+      player_death_west_3: -1209006295
+      player_death_west_4: 333570432
+      player_death_west_5: 255302245
+      player_death_west_6: 1581452076
+      player_death_west_7: 1143866069
+      player_death_west_8: -201877375
+      player_death_west_9: -673201647
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
