@@ -4,21 +4,19 @@ using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour
 {
-    //static string ANIM_PATH=
+    private Animator anim;
     private static AudioSource soundSource;
     private int deathCounter=0;
     [SerializeField] private AudioClip DEATH_SOUND;
     private static float respawnCooldown=2.0f;
     private static float respawnTimer=0f;
     public bool isDead=false;
-    static Squawk squawk;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        anim = transform.GetChild(0).GetComponent<Animator>();
         soundSource= this.gameObject.GetComponent<AudioSource>();
-
-        squawk = this.gameObject.GetComponent<Squawk>();
     }
 
     // Update is called once per frame
@@ -28,6 +26,7 @@ public class PlayerDeath : MonoBehaviour
         if(respawnTimer<0)
         {
             isDead=false;
+            anim.SetBool("isDead",false);
         }
     }
 
@@ -37,6 +36,7 @@ public class PlayerDeath : MonoBehaviour
         soundSource.clip=DEATH_SOUND;
         soundSource.Play();
         isDead=true;
+        anim.SetBool("isDead",true);
         if(respawnTimer>-5f){TriggerData.SetTrigger("DieIn5s",true);}
         else{TriggerData.SetTrigger("DieIn5s",false);}
         if(deathCounter==1){TriggerData.SetTrigger("Die",true);}

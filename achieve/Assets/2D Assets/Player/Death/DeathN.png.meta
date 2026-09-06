@@ -1,0 +1,1222 @@
+fileFormatVersion: 2
+guid: 3fce642608d4237d3940d794004eabd4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7871649175544266582
+    second: DeathN_0
+  - first:
+      213: -4388321012412542153
+    second: DeathN_1
+  - first:
+      213: 7954519877625177472
+    second: DeathN_2
+  - first:
+      213: -7746455523389185419
+    second: DeathN_3
+  - first:
+      213: -196351175676677474
+    second: DeathN_4
+  - first:
+      213: -4221869470351625658
+    second: DeathN_5
+  - first:
+      213: -5152524526537641716
+    second: DeathN_6
+  - first:
+      213: -8310041272830741450
+    second: DeathN_7
+  - first:
+      213: 4718792996634881328
+    second: DeathN_8
+  - first:
+      213: 7589354031251241982
+    second: DeathN_9
+  - first:
+      213: 4102049442625745748
+    second: DeathN_10
+  - first:
+      213: 2205634565195294188
+    second: DeathN_11
+  - first:
+      213: 2902326616640346275
+    second: DeathN_12
+  - first:
+      213: -8736052872809059483
+    second: DeathN_13
+  - first:
+      213: -148223210211892649
+    second: DeathN_14
+  - first:
+      213: -652226485883539958
+    second: DeathN_15
+  - first:
+      213: -7931894932865336961
+    second: DeathN_16
+  - first:
+      213: 8870455424332600081
+    second: DeathN_17
+  - first:
+      213: 1855169767478740523
+    second: DeathN_18
+  - first:
+      213: 8845401256248733803
+    second: DeathN_19
+  - first:
+      213: 6017829037842688330
+    second: DeathN_20
+  - first:
+      213: 4300709334969990429
+    second: DeathN_21
+  - first:
+      213: -2099204150432755539
+    second: DeathN_22
+  - first:
+      213: -5119823280549080595
+    second: DeathN_23
+  - first:
+      213: 5384482704904724956
+    second: DeathN_24
+  - first:
+      213: -5638296747894659763
+    second: DeathN_25
+  - first:
+      213: 601339624454710019
+    second: DeathN_26
+  - first:
+      213: 6028822361295227728
+    second: DeathN_27
+  - first:
+      213: -3695006280072599977
+    second: DeathN_28
+  - first:
+      213: 986089979578104829
+    second: DeathN_29
+  - first:
+      213: 7148683628678882779
+    second: DeathN_30
+  - first:
+      213: -2425828119804829169
+    second: DeathN_31
+  - first:
+      213: -3563211755254088130
+    second: DeathN_32
+  - first:
+      213: 7711923429305094141
+    second: DeathN_33
+  - first:
+      213: -1541646041328746735
+    second: DeathN_34
+  - first:
+      213: 2831408417261336884
+    second: DeathN_35
+  - first:
+      213: -6070537588592494356
+    second: DeathN_36
+  - first:
+      213: -9138282587278949441
+    second: DeathN_37
+  - first:
+      213: -2568290676808524240
+    second: DeathN_38
+  - first:
+      213: 7526520542502030592
+    second: DeathN_39
+  - first:
+      213: -7552532313613214660
+    second: DeathN_40
+  - first:
+      213: 5559260580749330588
+    second: DeathN_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DeathN_0
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 1596
+        width: 336
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa00037d7c842c290800000000000000
+      internalID: -7871649175544266582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_1
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 1596
+        width: 336
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73394ce1a4d8913c0800000000000000
+      internalID: -4388321012412542153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_2
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1593
+        width: 336
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 085e1a01fa1246e60800000000000000
+      internalID: 7954519877625177472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_3
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 1609
+        width: 328
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57266047ebf0f7490800000000000000
+      internalID: -7746455523389185419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_4
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 875
+        width: 544
+        height: 567
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e92bf8265ab664df0800000000000000
+      internalID: -196351175676677474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_5
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 848
+        width: 536
+        height: 555
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 642ff9bc518e865c0800000000000000
+      internalID: -4221869470351625658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_6
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 779
+        width: 692
+        height: 694
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c017c3b0e3e8e78b0800000000000000
+      internalID: -5152524526537641716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_7
+      rect:
+        serializedVersion: 2
+        x: 2181
+        y: 1240
+        width: 172
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 634b618ad7dccac80800000000000000
+      internalID: -8310041272830741450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_8
+      rect:
+        serializedVersion: 2
+        x: 2295
+        y: 1396
+        width: 75
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03de50daa358c7140800000000000000
+      internalID: 4718792996634881328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_9
+      rect:
+        serializedVersion: 2
+        x: 2541
+        y: 1397
+        width: 106
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efbb863084dc25960800000000000000
+      internalID: 7589354031251241982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_10
+      rect:
+        serializedVersion: 2
+        x: 2365
+        y: 1162
+        width: 110
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 453fbc60c386de830800000000000000
+      internalID: 4102049442625745748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_11
+      rect:
+        serializedVersion: 2
+        x: 2522
+        y: 1115
+        width: 298
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce5e9ca73fcfb9e10800000000000000
+      internalID: 2205634565195294188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_12
+      rect:
+        serializedVersion: 2
+        x: 2155
+        y: 912
+        width: 226
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a8520f3ea2274820800000000000000
+      internalID: 2902326616640346275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_13
+      rect:
+        serializedVersion: 2
+        x: 2351
+        y: 810
+        width: 292
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56b6f21a23e43c680800000000000000
+      internalID: -8736052872809059483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_14
+      rect:
+        serializedVersion: 2
+        x: 2623
+        y: 878
+        width: 127
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7522adf86c761fdf0800000000000000
+      internalID: -148223210211892649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_15
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 723
+        width: 35
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0e6fcb7773d2f6f0800000000000000
+      internalID: -652226485883539958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_16
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 732
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7937d2659f3ce190800000000000000
+      internalID: -7931894932865336961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_17
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 745
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1131843f5303a1b70800000000000000
+      internalID: 8870455424332600081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_18
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 685
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b264d9c0313eeb910800000000000000
+      internalID: 1855169767478740523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_19
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 685
+        width: 62
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b60ff7ed39d21ca70800000000000000
+      internalID: 8845401256248733803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_20
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 718
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a49e4a740af938350800000000000000
+      internalID: 6017829037842688330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_21
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 633
+        width: 78
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1db711aa503fab30800000000000000
+      internalID: 4300709334969990429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_22
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 673
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da01e6e72f02ed2e0800000000000000
+      internalID: -2099204150432755539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_23
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 560
+        width: 137
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de1d8123adbb2f8b0800000000000000
+      internalID: -5119823280549080595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_24
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 561
+        width: 108
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd1a41ded7689ba40800000000000000
+      internalID: 5384482704904724956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_25
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 631
+        width: 37
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d45af731bfeb0c1b0800000000000000
+      internalID: -5638296747894659763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_26
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 480
+        width: 165
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3036df0d333685800800000000000000
+      internalID: 601339624454710019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_27
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 484
+        width: 51
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05b0feadefdaaa350800000000000000
+      internalID: 6028822361295227728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_28
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 516
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7566f618d53b8bcc0800000000000000
+      internalID: -3695006280072599977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_29
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 443
+        width: 74
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfb3355ac9b4fad00800000000000000
+      internalID: 986089979578104829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_30
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 313
+        width: 72
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd52e0b82e9353360800000000000000
+      internalID: 7148683628678882779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_31
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 363
+        width: 48
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0221e87d2ab55ed0800000000000000
+      internalID: -2425828119804829169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_32
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 228
+        width: 118
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3e759c89cdec8ec0800000000000000
+      internalID: -3563211755254088130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_33
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 263
+        width: 65
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dff0ebadf71460b60800000000000000
+      internalID: 7711923429305094141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_34
+      rect:
+        serializedVersion: 2
+        x: 1959
+        y: 309
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f7639e719fa9ae0800000000000000
+      internalID: -1541646041328746735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_35
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 198
+        width: 96
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 439b9ec34fe2b4720800000000000000
+      internalID: 2831408417261336884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_36
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 174
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce8b94ce93e11cba0800000000000000
+      internalID: -6070537588592494356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_37
+      rect:
+        serializedVersion: 2
+        x: 1727
+        y: 213
+        width: 31
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb3c910576c4e2180800000000000000
+      internalID: -9138282587278949441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_38
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 43
+        width: 292
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03e51e0ac399b5cd0800000000000000
+      internalID: -2568290676808524240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_39
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 43
+        width: 292
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00d83826e82937860800000000000000
+      internalID: 7526520542502030592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_40
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 43
+        width: 292
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3cdc6430e3003790800000000000000
+      internalID: -7552532313613214660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathN_41
+      rect:
+        serializedVersion: 2
+        x: 2351
+        y: 43
+        width: 292
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9845614b06762d40800000000000000
+      internalID: 5559260580749330588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DeathN_0: -7871649175544266582
+      DeathN_1: -4388321012412542153
+      DeathN_10: 4102049442625745748
+      DeathN_11: 2205634565195294188
+      DeathN_12: 2902326616640346275
+      DeathN_13: -8736052872809059483
+      DeathN_14: -148223210211892649
+      DeathN_15: -652226485883539958
+      DeathN_16: -7931894932865336961
+      DeathN_17: 8870455424332600081
+      DeathN_18: 1855169767478740523
+      DeathN_19: 8845401256248733803
+      DeathN_2: 7954519877625177472
+      DeathN_20: 6017829037842688330
+      DeathN_21: 4300709334969990429
+      DeathN_22: -2099204150432755539
+      DeathN_23: -5119823280549080595
+      DeathN_24: 5384482704904724956
+      DeathN_25: -5638296747894659763
+      DeathN_26: 601339624454710019
+      DeathN_27: 6028822361295227728
+      DeathN_28: -3695006280072599977
+      DeathN_29: 986089979578104829
+      DeathN_3: -7746455523389185419
+      DeathN_30: 7148683628678882779
+      DeathN_31: -2425828119804829169
+      DeathN_32: -3563211755254088130
+      DeathN_33: 7711923429305094141
+      DeathN_34: -1541646041328746735
+      DeathN_35: 2831408417261336884
+      DeathN_36: -6070537588592494356
+      DeathN_37: -9138282587278949441
+      DeathN_38: -2568290676808524240
+      DeathN_39: 7526520542502030592
+      DeathN_4: -196351175676677474
+      DeathN_40: -7552532313613214660
+      DeathN_41: 5559260580749330588
+      DeathN_5: -4221869470351625658
+      DeathN_6: -5152524526537641716
+      DeathN_7: -8310041272830741450
+      DeathN_8: 4718792996634881328
+      DeathN_9: 7589354031251241982
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

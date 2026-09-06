@@ -6,8 +6,7 @@ public class IsometricMovementController : MonoBehaviour
 {
     [SerializeField] AnimationCurve curveY;
     private PlayerDeath playerDeath;
-    //private SpriteRenderer sprite;
-    //[SerializeField] private Sprite moveE;
+    private string previousDirection;
     Animator anim;
     Rigidbody2D rb;
     Vector2 movement;
@@ -45,13 +44,14 @@ public class IsometricMovementController : MonoBehaviour
     }
     void JumpHandler()
     {
-        if(onGround||playerDeath.isDead)
+        if(onGround)
         {
             currentPos = rb.position;
             landingPos = currentPos + movement.normalized * speed;
             landingDis = Vector2.Distance(landingPos, currentPos);
             timeElapsed = 0f;
             onGround = false;
+            anim.SetBool("onGround",false);
         }
         else
         {
@@ -65,6 +65,7 @@ public class IsometricMovementController : MonoBehaviour
             {
                 jump = false;
                 onGround = true;
+                anim.SetBool("onGround",true);
             }
         }
     }
@@ -80,17 +81,49 @@ public class IsometricMovementController : MonoBehaviour
         {
             float horizontal = Input.GetAxis("Horizontal");
             float vertical = Input.GetAxis("Vertical");
-            //if(horizontal > 0.1){sprite.sprite=moveE;}
-            //if(horizontal < -0.1){anim.Play("MoveW");}
-            //if(vertical > 0.1){anim.Play("MoveN");}
-            //if(vertical < -0.1){anim.Play("MoveS");}
-
-            movement = new Vector2(horizontal, vertical);
+            if(Mathf.Abs(horizontal) >= Mathf.Abs(vertical))
+            {
+                movement = new Vector2(horizontal, 0);
+                anim.SetFloat("hspeed",horizontal);
+                anim.SetFloat("vspeed",0);
+                if(horizontal > 0.1)
+                {
+                    previousDirection="Right";
+                    anim.SetInteger("previousDirection",1);
+                }
+                if(horizontal < -0.1)
+                {
+                    previousDirection="Left";
+                    anim.SetInteger("previousDirection",2);
+                }
+            }
+            else
+            {
+                movement = new Vector2(0, vertical);
+                anim.SetFloat("vspeed",vertical);
+                anim.SetFloat("hspeed",0);
+                if(vertical > 0.1)
+                {
+                    previousDirection="Up";
+                    anim.SetInteger("previousDirection",3);
+                }
+                if(vertical < -0.1)
+                {
+                    previousDirection="Down";
+                    anim.SetInteger("previousDirection",4);
+                }
+            }
+            //movement = new Vector2(horizontal, vertical);
 
             if(Input.GetKeyDown("space"))
             {
                 jump = true;
             }
+        }
+        else
+        {
+            anim.SetFloat("hspeed",0);
+            anim.SetFloat("vspeed",0);
         }
 
     }

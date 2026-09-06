@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 7bc00f22af235af818961f604fca33ab
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 377629612224119001
+    second: SquawkE_0
+  - first:
+      213: -137807951120057591
+    second: SquawkE_1
+  - first:
+      213: -4770831853499974222
+    second: SquawkE_2
+  - first:
+      213: 8142286977493285209
+    second: SquawkE_3
+  - first:
+      213: -4374097993033732377
+    second: SquawkE_4
+  - first:
+      213: 3102988494319960272
+    second: SquawkE_5
+  - first:
+      213: -1077411223287302861
+    second: SquawkE_6
+  - first:
+      213: 7081556672718540095
+    second: SquawkE_7
+  - first:
+      213: -5844382057056115418
+    second: SquawkE_8
+  - first:
+      213: 5306587235912498811
+    second: SquawkE_9
+  - first:
+      213: -3846088291556784257
+    second: SquawkE_10
+  - first:
+      213: -8024537053552723229
+    second: SquawkE_11
+  - first:
+      213: 225310779177729942
+    second: SquawkE_12
+  - first:
+      213: -5696036052616826698
+    second: SquawkE_13
+  - first:
+      213: 5026620376921217725
+    second: SquawkE_14
+  - first:
+      213: 1545469928569487856
+    second: SquawkE_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SquawkE_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 802
+        width: 595
+        height: 694
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d0894da12c9d3500800000000000000
+      internalID: 377629612224119001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SquawkE_1
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 802
+        width: 602
+        height: 694
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90bb34a0668661ef0800000000000000
+      internalID: -137807951120057591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SquawkE_2
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 802
+        width: 608
+        height: 694
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bdf309c4b99acdb0800000000000000
+      internalID: -4770831853499974222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SquawkE_3
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 1255
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 959b6c8cdd63ff070800000000000000
+      internalID: 8142286977493285209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SquawkE_4
+      rect:
+        serializedVersion: 2
+        x: 2073
+        y: 1215
+        width: 55
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eea970ec051c43c0800000000000000
+      internalID: -4374097993033732377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SquawkE_5
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 35
+        width: 602
+        height: 694
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d0c0126897001b20800000000000000
+      internalID: 3102988494319960272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SquawkE_6
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 487
+        width: 50
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 335f0f663344c01f0800000000000000
+      internalID: -1077411223287302861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SquawkE_7
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 35
+        width: 597
+        height: 694
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3d8f2e264eb64260800000000000000
+      internalID: 7081556672718540095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SquawkE_8
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 498
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 625e085eb7594eea0800000000000000
+      internalID: -5844382057056115418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SquawkE_9
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 487
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7ebf2eb9f8c4a940800000000000000
+      internalID: 5306587235912498811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SquawkE_10
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 447
+        width: 66
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7708f68313ff9ac0800000000000000
+      internalID: -3846088291556784257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SquawkE_11
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 432
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eab70cc01e13a090800000000000000
+      internalID: -8024537053552723229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SquawkE_12
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 447
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69f74fcb5f6702300800000000000000
+      internalID: 225310779177729942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SquawkE_13
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 395
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b0b4f7936d93f0b0800000000000000
+      internalID: -5696036052616826698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SquawkE_14
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 428
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dba1123c99422c540800000000000000
+      internalID: 5026620376921217725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SquawkE_15
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 395
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f1ce6736bc927510800000000000000
+      internalID: 1545469928569487856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SquawkE_0: 377629612224119001
+      SquawkE_1: -137807951120057591
+      SquawkE_10: -3846088291556784257
+      SquawkE_11: -8024537053552723229
+      SquawkE_12: 225310779177729942
+      SquawkE_13: -5696036052616826698
+      SquawkE_14: 5026620376921217725
+      SquawkE_15: 1545469928569487856
+      SquawkE_2: -4770831853499974222
+      SquawkE_3: 8142286977493285209
+      SquawkE_4: -4374097993033732377
+      SquawkE_5: 3102988494319960272
+      SquawkE_6: -1077411223287302861
+      SquawkE_7: 7081556672718540095
+      SquawkE_8: -5844382057056115418
+      SquawkE_9: 5306587235912498811
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
