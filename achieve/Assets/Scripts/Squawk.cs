@@ -4,19 +4,20 @@ public class Squawk : MonoBehaviour
 {
     private AudioSource squawkSound;
     [SerializeField] private AudioClip SQUAWK_SOUND;
+    private PlayerDeath playerDeath;
     private int squawkCount=0;//needed for achievement trigger
-    public bool isDead=false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         squawkSound = this.gameObject.GetComponent<AudioSource>();
+        playerDeath=GameObject.Find("Player").GetComponent<PlayerDeath>();
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.E) && isDead==false)
+        if (Input.GetKeyDown(KeyCode.E) && playerDeath.isDead==false)
         {
             squawkSound.clip = SQUAWK_SOUND;
             squawkSound.Play();

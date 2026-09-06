@@ -15,7 +15,7 @@ public abstract class Interactable : MonoBehaviour
     [SerializeField] protected List <Sprite> spriteStates;
 
     public abstract void Interact();
-    protected void Start()
+    protected virtual void Start()
     {
         player=GameObject.Find("Player");
     }

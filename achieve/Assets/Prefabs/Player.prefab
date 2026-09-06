@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 2298815635075839556}
   - component: {fileID: 9079835852590234117}
   - component: {fileID: 8357152834164811540}
-  - component: {fileID: 7159835164233108344}
   - component: {fileID: 584991568581413774}
   - component: {fileID: -5625651420908973563}
+  - component: {fileID: 6567188842649504158}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 3163568833965580115}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.54511464, y: -0.3673963, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -101,7 +101,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.2
+  m_Radius: 0.3
 --- !u!114 &9079835852590234117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,7 +115,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SquawkSound
   SQUAWK_SOUND: {fileID: 8300000, guid: 68a645db5d360d540955710a918ebfb2, type: 3}
-  isDead: 0
 --- !u!82 &8357152834164811540
 AudioSource:
   m_ObjectHideFlags: 0
@@ -213,22 +212,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &7159835164233108344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3163568833965580115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e212d36ecc5724b828d652b2dbd6f0bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  moveh: 0
-  movev: 0
-  speed: 1
-  isDead: 0
 --- !u!114 &584991568581413774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,6 +237,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerDeath
   DEATH_SOUND: {fileID: 8300000, guid: f4175549145bc164f8646b389776e3a3, type: 3}
+  isDead: 0
+--- !u!114 &6567188842649504158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3163568833965580115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b09cf677fe3a77d18b30bb93cda6db7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::IsometricMovementController
+  curveY:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 2
+      tangentMode: 69
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.5
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -2
+      outSlope: 0
+      tangentMode: 5
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &3536451317675707038
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,9 +293,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8588272136749861045}
   - component: {fileID: 6313121154851166058}
-  - component: {fileID: 8659756410272175298}
-  - component: {fileID: 5850241701462107551}
-  - component: {fileID: 8430582395097260316}
+  - component: {fileID: 4632527467591890589}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -349,29 +376,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
---- !u!114 &8659756410272175298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3536451317675707038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3685f99413bf2f04baf2c3681e2e6cc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  IdleDirections:
-  - IdleS
-  - IdleE
-  - IdleN
-  - IdleW
-  MoveDirections:
-  - MoveS
-  - MoveE
-  - MoveN
-  - MoveW
---- !u!95 &5850241701462107551
+--- !u!95 &4632527467591890589
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -393,18 +398,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8430582395097260316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3536451317675707038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b88a11dfa6d48742927f77dd4aeff46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  playerTransform: {fileID: 8588272136749861045}
-  Velocity: 0
-  distance: 0

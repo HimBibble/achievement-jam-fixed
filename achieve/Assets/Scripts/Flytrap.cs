@@ -8,7 +8,7 @@ public class Flytrap : Interactable
 {
     static int nomCount=0; //how many times the player has been eaten
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    protected virtual void Start()
+    protected override void Start()
     {
         base.Start();
         //spriteIndexes = new int[] {0,2,6,3,4,5};

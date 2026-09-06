@@ -8,7 +8,7 @@ public class FlowerTile : Interactable
 {
     static int flowersStomped=0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    protected virtual void Start()
+    protected override void Start()
     {
         base.Start();
         //spriteIndexes = new int[] {7,0,4,2,5,3,6,8};

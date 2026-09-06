@@ -8,7 +8,7 @@ public class TreeTile : Interactable
 {
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    protected virtual void Start()
+    protected override void Start()
     {
         //spriteIndexes=new int[] {0};
         base.Start();

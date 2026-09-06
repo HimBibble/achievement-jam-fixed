@@ -9,8 +9,9 @@ public class ZoneTile : Interactable
     [SerializeField] private string zoneTrigger; //used for unlocking zone specific achievements
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    protected override void Start()
     {
+        base.Start();
         //ASSET_PATH = "Assets/2D Assets/Venus_Flytrap/Venus_Flytrap_SpriteSheet.png";
         interactCooldown=0.0f;
         this.gameObject.tag="Collision";
