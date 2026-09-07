@@ -10,11 +10,14 @@ public class PlayerDeath : MonoBehaviour
     [SerializeField] private AudioClip DEATH_SOUND;
     private static float respawnCooldown=2.0f;
     private static float respawnTimer=0f;
+    private static float gracePeriod=0.5f;
+    private static PlayerInteract playerInteract;
     public bool isDead=false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        playerInteract = GetComponent<PlayerInteract>();
         anim = transform.GetChild(0).GetComponent<Animator>();
         soundSource= this.gameObject.GetComponent<AudioSource>();
     }
@@ -36,6 +39,15 @@ public class PlayerDeath : MonoBehaviour
         else{TriggerData.SetTrigger("Alive30",false);}
         if(respawnTimer<300&&!isDead){TriggerData.SetTrigger("Alive300",true);}
         else{TriggerData.SetTrigger("Alive300",false);}
+        if(GetComponent<IsometricMovementController>().onGround==true&&playerInteract.inLevel==false)
+        {
+            Kill();
+            playerInteract.inLevel=true;
+            TriggerData.SetTrigger("VoidOut",true);
+        }
+        else{
+            TriggerData.SetTrigger("VoidOut",false);
+        }
     }
 
     public void Kill()

@@ -4,6 +4,8 @@ using System.Collections;
 public class PlayerInteract : MonoBehaviour
 {
     private float interactionRadius = 1;
+    private bool InLevel = true;
+    public bool inLevel {get{return InLevel;} set{InLevel=value;}}
     public void SquawkInteract()
     {
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(this.gameObject.transform.position, interactionRadius);
@@ -29,5 +31,11 @@ public class PlayerInteract : MonoBehaviour
             else if(otherGameObject.GetComponent<ExitDoor>()!=null){otherGameObject.GetComponent<ExitDoor>().Interact();}
             else if(otherGameObject.GetComponent<BeeSwarm>()!=null){otherGameObject.GetComponent<BeeSwarm>().Interact();}
         }
+        if(otherGameObject.name=="Main Level"){inLevel=true;}
+    }
+    void OnTriggerExit2D(Collider2D collider)
+    {
+        GameObject otherGameObject=collider.gameObject;
+        if(otherGameObject.name=="Main Level"){inLevel=false;}
     }
 }
