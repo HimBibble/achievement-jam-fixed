@@ -29,7 +29,7 @@ public class Flytrap : Interactable
         if(interactTimer<=0f && nomCount < 5)
         {
             nomCount++;
-            //player.GetComponent<PlayerDeath>().Kill();
+            player.GetComponent<PlayerDeath>().Kill();
             TransitionSprite();
             UpdateSprite();
             if(nomCount==1){TriggerData.SetTrigger("Flytrap",true);}
