@@ -4,47 +4,47 @@ using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour
 {
-    //static string ANIM_PATH=
+    private Animator anim;
     private static AudioSource soundSource;
     private int deathCounter=0;
     [SerializeField] private AudioClip DEATH_SOUND;
     private static float respawnCooldown=2.0f;
     private static float respawnTimer=0f;
-    static PlayerMovement playerMovement;
-    static PlayerJump playerJump;
-    static SquawkInteract squawkInteract;
+    public bool isDead=false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        DEATH_SOUND=Resources.Load<AudioClip>("Assets/SFX/Player Death.mp3");
+        anim = transform.GetChild(0).GetComponent<Animator>();
         soundSource= this.gameObject.GetComponent<AudioSource>();
-        playerMovement = this.gameObject.GetComponent<PlayerMovement>();
-        playerJump = this.gameObject.GetComponent<PlayerJump>();
-        squawkInteract = this.gameObject.GetComponent<SquawkInteract>();
     }
 
     // Update is called once per frame
     void Update()
     {
         respawnTimer-=Time.deltaTime;
-        if(respawnTimer<0)
+        if(respawnTimer<0&&isDead)
         {
-            playerJump.isDead=false;
-            squawkInteract.isDead=false;
-            playerMovement.isDead=false;
+            isDead=false;
+            anim.SetBool("isDead",false);
+            this.gameObject.transform.position=new Vector2(0,0);
+            this.gameObject.GetComponent<Rigidbody2D>().position=new Vector2(0,0);
         }
+        if(respawnTimer<10&&!isDead){TriggerData.SetTrigger("Alive10",true);}
+        else{TriggerData.SetTrigger("Alive10",false);}
+        if(respawnTimer<30&&!isDead){TriggerData.SetTrigger("Alive30",true);}
+        else{TriggerData.SetTrigger("Alive30",false);}
+        if(respawnTimer<300&&!isDead){TriggerData.SetTrigger("Alive300",true);}
+        else{TriggerData.SetTrigger("Alive300",false);}
     }
 
     public void Kill()
     {
         deathCounter++;
-        //play death animation
         soundSource.clip=DEATH_SOUND;
         soundSource.Play();
-        playerJump.isDead=true;
-        squawkInteract.isDead=true;
-        playerMovement.isDead=true;
+        isDead=true;
+        anim.SetBool("isDead",true);
         if(respawnTimer>-5f){TriggerData.SetTrigger("DieIn5s",true);}
         else{TriggerData.SetTrigger("DieIn5s",false);}
         if(deathCounter==1){TriggerData.SetTrigger("Die",true);}

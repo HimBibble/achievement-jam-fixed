@@ -1,0 +1,318 @@
+fileFormatVersion: 2
+guid: 4dccd2cca7c7c2b4eb97d40def4354ba
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6445131500104200061
+    second: AchievementGetProtagSquawk4_0
+  - first:
+      213: 4534430604241905777
+    second: AchievementGetProtagSquawk4_1
+  - first:
+      213: 8687962481184309666
+    second: AchievementGetProtagSquawk4_2
+  - first:
+      213: 1314353171487598369
+    second: AchievementGetProtagSquawk4_3
+  - first:
+      213: 5530971298974152941
+    second: AchievementGetProtagSquawk4_4
+  - first:
+      213: 5327521266152634096
+    second: AchievementGetProtagSquawk4_5
+  - first:
+      213: -4630719169984402844
+    second: AchievementGetProtagSquawk4_6
+  - first:
+      213: 7299716623791363726
+    second: AchievementGetProtagSquawk4_7
+  - first:
+      213: -352623574027740180
+    second: AchievementGetProtagSquawk4_8
+  - first:
+      213: 7751606456897387537
+    second: AchievementGetProtagSquawk4_9
+  - first:
+      213: 7265502185411286945
+    second: AchievementGetProtagSquawk4_10
+  - first:
+      213: -1941157216010410414
+    second: AchievementGetProtagSquawk4_11
+  - first:
+      213: -2594842086489122626
+    second: AchievementGetProtagSquawk4_12
+  - first:
+      213: -2455263265138232907
+    second: AchievementGetProtagSquawk4_13
+  - first:
+      213: 2821303463591663655
+    second: AchievementGetProtagSquawk4_14
+  - first:
+      213: -6845264012184779245
+    second: AchievementGetProtagSquawk4_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player_squawk_east_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 775
+        width: 710
+        height: 767
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af7b9fe341c7fd4da47360da52c386f
+      internalID: 572682656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_squawk_east_1
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 775
+        width: 710
+        height: 767
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cecc9627490b4264e99913edec8cd1a0
+      internalID: 95933968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_squawk_east_2
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 775
+        width: 710
+        height: 767
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df5a5d0aa5f74c458ef24ab0af9ecaf
+      internalID: 758108524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_squawk_east_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6
+        width: 710
+        height: 767
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bdea63283e9eea4cbad846eebeb13d6
+      internalID: 1822256942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_squawk_east_4
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 6
+        width: 710
+        height: 767
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eabaa674153212e42a4a87b8358cb5b4
+      internalID: 658038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_squawk_east_5
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 6
+        width: 710
+        height: 767
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4730ac336079e7943a4bfdca807551ca
+      internalID: 1714188429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 486ea7cb1bfa5564e9410a9446261ea8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":710.0,"y":767.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":2.0,"y":2.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      player_squawk_east_0: 572682656
+      player_squawk_east_1: 95933968
+      player_squawk_east_2: 758108524
+      player_squawk_east_3: 1822256942
+      player_squawk_east_4: 658038
+      player_squawk_east_5: 1714188429
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

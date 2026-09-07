@@ -6,16 +6,16 @@ using System;
 
 public class Flytrap : Interactable
 {
-    private GameObject player;
     static int nomCount=0; //how many times the player has been eaten
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    protected override void Start()
     {
-        player = GameObject.Find("Player");
-        ASSET_PATH = "Assets/2D Assets/Venus_Flytrap/Venus_Flytrap_SpriteSheet.png";
+        base.Start();
+        //spriteIndexes = new int[] {0,2,6,3,4,5};
+        //ASSET_PATH = "Assets/2D Assets/Venus_Flytrap/Venus_Flytrap_SpriteSheet.png";
         interactCooldown=0.5f;
         this.gameObject.tag="Collision";
-        spriteStates = AssetDatabase.LoadAllAssetsAtPath(ASSET_PATH).ToList().ConvertAll(new Converter<UnityEngine.Object, Sprite>(ObjectToSprite)); //populates flytrapSprites with all the venus flytrap sprites
+        //spriteStates = AssetDatabase.LoadAllAssetsAtPath(ASSET_PATH).ToList().ConvertAll(new Converter<UnityEngine.Object, Sprite>(ObjectToSprite)); //populates flytrapSprites with all the venus flytrap sprites
         UpdateSprite();
     }
 

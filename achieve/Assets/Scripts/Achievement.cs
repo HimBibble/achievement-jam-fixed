@@ -36,8 +36,8 @@ public class Achievement
         this.AchievementDescription = value;
         }
     }
-    private bool IsUnlocked;
-    public bool isUnlocked {get {return IsUnlocked;} set {IsUnlocked=value;}}
+    //private bool IsUnlocked;
+    //public bool isUnlocked {get {return IsUnlocked;} set {IsUnlocked=value;}}
     private List<Trigger> AchievementTriggers=new List<Trigger>();
     public List<Trigger> achievementTriggers {get {return AchievementTriggers;} set {AchievementTriggers=value;}}
     public Achievement(string achievementName, string achievementDescription, List<Trigger> achievementTriggers/*,

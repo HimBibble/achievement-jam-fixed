@@ -3,14 +3,19 @@ using System.Collections;
 
 public class PlayerInteract : MonoBehaviour
 {
-    private float interactionRadius = 10;
+    private float interactionRadius = 1;
     public void SquawkInteract()
     {
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(this.gameObject.transform.position, interactionRadius);
         foreach (Collider2D hitCollider in hitColliders)
         {
-            GameObject hitGameObject = hitCollider.gameObject;
-            if(hitGameObject.tag=="Squawk"){hitGameObject.GetComponent<TreeTile>().Interact();}
+            GameObject otherGameObject = hitCollider.gameObject;
+            //Debug.Log(hitGameObject.name);
+            if(otherGameObject.tag=="Squawk")
+            {
+                if(otherGameObject.GetComponent<TreeTile>()!=null){otherGameObject.GetComponent<TreeTile>().Interact();}
+                else if(otherGameObject.GetComponent<Beehive>()!=null){otherGameObject.GetComponent<Beehive>().Interact();}
+            }
         }
     }
     void OnTriggerEnter2D(Collider2D collider)
@@ -18,7 +23,11 @@ public class PlayerInteract : MonoBehaviour
         GameObject otherGameObject=collider.gameObject;
         if(otherGameObject.gameObject.tag=="Collision")
         {
-            otherGameObject.GetComponent<FlowerTile>().Interact();
+            if(otherGameObject.GetComponent<FlowerTile>()!=null){otherGameObject.GetComponent<FlowerTile>().Interact();}
+            else if(otherGameObject.GetComponent<Flytrap>()!=null){otherGameObject.GetComponent<Flytrap>().Interact();}
+            else if(otherGameObject.GetComponent<ZoneTile>()!=null){otherGameObject.GetComponent<ZoneTile>().Interact();}
+            else if(otherGameObject.GetComponent<ExitDoor>()!=null){otherGameObject.GetComponent<ExitDoor>().Interact();}
+            else if(otherGameObject.GetComponent<BeeSwarm>()!=null){otherGameObject.GetComponent<BeeSwarm>().Interact();}
         }
     }
 }
