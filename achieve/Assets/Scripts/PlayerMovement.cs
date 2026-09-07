@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space) && distance < 1)
         {
-            Velocity = 5;
+            Velocity = 6;
         }
         distance += Velocity * 0.1;
         if (distance > 0)

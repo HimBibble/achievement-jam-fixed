@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour
 {
+    /*
     //static string ANIM_PATH=
     private static AudioSource soundSource;
     private int deathCounter=0;
@@ -57,4 +58,5 @@ public class PlayerDeath : MonoBehaviour
 
 
     }
+    */
 }
