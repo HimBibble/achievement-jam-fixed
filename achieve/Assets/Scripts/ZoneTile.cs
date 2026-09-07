@@ -6,11 +6,14 @@ using System;
 
 public class ZoneTile : Interactable
 {
+    private SpriteRenderer sprite;
     [SerializeField] private string zoneTrigger; //used for unlocking zone specific achievements
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     protected override void Start()
     {
+        sprite=GetComponent<SpriteRenderer>();
+        sprite.sprite=null;
         base.Start();
         //ASSET_PATH = "Assets/2D Assets/Venus_Flytrap/Venus_Flytrap_SpriteSheet.png";
         interactCooldown=0.0f;
@@ -22,7 +25,7 @@ public class ZoneTile : Interactable
     // Update is called once per frame
     void Update()
     {
-        if(interactTimer>0f){TriggerData.SetTrigger(zoneTrigger,false);}
+
     }
     public override void Interact()
     {

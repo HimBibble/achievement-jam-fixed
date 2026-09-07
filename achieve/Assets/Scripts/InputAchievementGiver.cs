@@ -1,13 +1,16 @@
 using UnityEditor;
 using UnityEngine;
+using System.Collections.Generic;
 using UnityEngine.UIElements;
 
 public class InputAchievementGiver : MonoBehaviour
 {
+    private static List<string> KONAMI_CODE = new List<string>() {"Up","Up","Down","Down","Left","Right","Left","Right","B","A"};
+    private static List<string> myCode = new List<string>();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -34,12 +37,39 @@ public class InputAchievementGiver : MonoBehaviour
         else{TriggerData.SetTrigger("Key9",false);}
         if (Input.GetKeyDown("0")){TriggerData.SetTrigger("Key0",true);}
         else{TriggerData.SetTrigger("Key0",false);}
-        if (Input.GetMouseButtonDown(0)){TriggerData.SetTrigger("LeftMouse",true);}
+        //mouse
+        if (Input.GetMouseButton(0)){TriggerData.SetTrigger("LeftMouse",true);}
         else{TriggerData.SetTrigger("LeftMouse",false);}
         if (Input.GetMouseButtonDown(1)){TriggerData.SetTrigger("RightMouse",true);}
         else{TriggerData.SetTrigger("RightMouse",false);}
-
         if (Input.GetMouseButtonDown(2)){TriggerData.SetTrigger("MiddleMouse",true);}
         else{TriggerData.SetTrigger("MiddleMouse",false);}
+        //konami code
+        if (Input.GetKeyDown(KeyCode.UpArrow)){myCode.Add("Up");}
+        if (Input.GetKeyDown(KeyCode.DownArrow)){myCode.Add("Down");}
+        if (Input.GetKeyDown(KeyCode.LeftArrow)){myCode.Add("Left");}
+        if (Input.GetKeyDown(KeyCode.RightArrow)){myCode.Add("Right");}
+        if (Input.GetKeyDown(KeyCode.A)){myCode.Add("A");}
+        if (Input.GetKeyDown(KeyCode.B)){myCode.Add("B");}
+        if(myCode.Count==0)
+        {
+            TriggerData.SetTrigger("KonamiCode",false);
+            return;
+        }
+        for(int i =0;i<myCode.Count;i++)
+        {
+            //Debug.Log(myCode[i]);
+            if(myCode[i]!=KONAMI_CODE[i])
+            {
+                Clear(); //because clearing inside the loop results in an error
+                return;
+            }
+        }
+        if(myCode.Count>=10){
+            TriggerData.SetTrigger("KonamiCode",true);}
+    }
+    private void Clear()
+    {
+        myCode.Clear();
     }
 }

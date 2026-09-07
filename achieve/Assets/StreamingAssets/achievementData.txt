@@ -30,8 +30,8 @@ TOKI WO TOMARE;Pause the game.;Pause
 Toki Wa Ugokidasu;Resume the game.;Unpause
 Wilhelm!;Fall off the map.;VoidOut
 Silent Nighthawk;Don't squawk for 1 minute.;NoSquawk60
-It's big, it's heavy;Touch a tree.;InteractTree
-Quiet down now.;Lower the games audio;DecreaseAudio
+It's big, it's heavy;Squawk at a tree.;InteractTree
+Quiet down now.;Lower the game's audio;DecreaseAudio
 I worked hard on the song y'know?;Mute the game.;MuteAudio
 Turn it up!;Raise the games audio.;IncreaseVolume
 I;Earn your first achievement.;Achievement
@@ -40,7 +40,7 @@ L;Earn fifty achievements.;Achievement50
 Clicky;Click the game.;LeftMouse
 That's right.;Right click the game.;RightMouse
 MOUSE3;Middle click the game.;MiddleMouse
-My favorite spot.;Find the developers fav spot.;SecretSpotFeed
+My favorite spot.;Find the developers fav spot.;SecretSpot
 Ring a Ring o' Roses;Find the circle of flowers.;FlowerRing
 OM NOM;Feed a venus flytrap.;Flytrap
 Second Course;Feed a venus flytrap twice.;Flytrap2

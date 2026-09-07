@@ -7,13 +7,14 @@ public class IsometricMovementController : MonoBehaviour
     [SerializeField] AnimationCurve curveY;
     private PlayerDeath playerDeath;
     private string previousDirection;
+    private static int jumpCounter=0;
     Animator anim;
     Rigidbody2D rb;
     Vector2 movement;
     Vector2 currentPos;
     Vector2 landingPos;
     float landingDis;
-    float speed = 1f;
+    float speed = 2f;
     float timeElapsed = 0f;
     bool onGround = true;
     bool jump = false;
@@ -72,7 +73,10 @@ public class IsometricMovementController : MonoBehaviour
 
     void MovementHandler()
     {
-        rb.MovePosition(rb.position + movement.normalized * speed * Time.fixedDeltaTime);
+        if(!playerDeath.isDead)
+        {
+            rb.MovePosition(rb.position + movement.normalized * speed * Time.fixedDeltaTime);
+        }
     }
 
     void InputHandler()
@@ -90,11 +94,21 @@ public class IsometricMovementController : MonoBehaviour
                 {
                     previousDirection="Right";
                     anim.SetInteger("previousDirection",1);
+                    TriggerData.SetTrigger("MoveRight",true);
+                }
+                else
+                {
+                    TriggerData.SetTrigger("MoveRight",false);
                 }
                 if(horizontal < -0.1)
                 {
                     previousDirection="Left";
                     anim.SetInteger("previousDirection",2);
+                    TriggerData.SetTrigger("MoveLeft",true);
+                }
+                else
+                {
+                    TriggerData.SetTrigger("MoveLeft",false);
                 }
             }
             else
@@ -106,11 +120,21 @@ public class IsometricMovementController : MonoBehaviour
                 {
                     previousDirection="Up";
                     anim.SetInteger("previousDirection",3);
+                    TriggerData.SetTrigger("MoveUp",true);
+                }
+                else
+                {
+                    TriggerData.SetTrigger("MoveUp",false);
                 }
                 if(vertical < -0.1)
                 {
                     previousDirection="Down";
                     anim.SetInteger("previousDirection",4);
+                    TriggerData.SetTrigger("MoveDown",true);
+                }
+                else
+                {
+                    TriggerData.SetTrigger("MoveDown",false);
                 }
             }
             //movement = new Vector2(horizontal, vertical);
@@ -118,6 +142,13 @@ public class IsometricMovementController : MonoBehaviour
             if(Input.GetKeyDown("space"))
             {
                 jump = true;
+                jumpCounter++;
+                if(jumpCounter==1){TriggerData.SetTrigger("Jump",true);}
+                else{TriggerData.SetTrigger("Jump",false);}
+                if(jumpCounter==5){TriggerData.SetTrigger("Jump5",true);}
+                else{TriggerData.SetTrigger("Jump5",false);}
+                if(jumpCounter==50){TriggerData.SetTrigger("Jump50",true);}
+                else{TriggerData.SetTrigger("Jump50",false);}
             }
         }
         else

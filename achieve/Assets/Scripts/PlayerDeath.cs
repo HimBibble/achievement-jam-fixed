@@ -23,11 +23,19 @@ public class PlayerDeath : MonoBehaviour
     void Update()
     {
         respawnTimer-=Time.deltaTime;
-        if(respawnTimer<0)
+        if(respawnTimer<0&&isDead)
         {
             isDead=false;
             anim.SetBool("isDead",false);
+            this.gameObject.transform.position=new Vector2(0,0);
+            this.gameObject.GetComponent<Rigidbody2D>().position=new Vector2(0,0);
         }
+        if(respawnTimer<10&&!isDead){TriggerData.SetTrigger("Alive10",true);}
+        else{TriggerData.SetTrigger("Alive10",false);}
+        if(respawnTimer<30&&!isDead){TriggerData.SetTrigger("Alive30",true);}
+        else{TriggerData.SetTrigger("Alive30",false);}
+        if(respawnTimer<300&&!isDead){TriggerData.SetTrigger("Alive300",true);}
+        else{TriggerData.SetTrigger("Alive300",false);}
     }
 
     public void Kill()

@@ -23,7 +23,7 @@ public class TreeTile : Interactable
     // Update is called once per frame
     protected virtual void Update()
     {
-        if(interactTimer<0f){TriggerData.SetTrigger("InteractTree",false);}
+        //if(interactTimer<0f){TriggerData.SetTrigger("InteractTree",false);}
         interactTimer-=Time.deltaTime;
     }
     public override void Interact()

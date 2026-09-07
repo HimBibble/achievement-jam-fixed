@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: e6f1c3821c6cdd419983e53338b77e9a
+guid: 0ce3e250f99d23347bff65d33889b944
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4653054268716933883
-    second: SquawkS_0
+      213: -8578193268484200450
+    second: AchievementGetProtagSquawk1_0
   - first:
-      213: 9089153370331539758
-    second: SquawkS_1
+      213: -4562354032600362395
+    second: AchievementGetProtagSquawk1_1
   - first:
-      213: -6287273450592344690
-    second: SquawkS_2
+      213: -6144937814156150837
+    second: AchievementGetProtagSquawk1_2
   - first:
-      213: -3803857005934848740
-    second: SquawkS_3
+      213: 5315234114703040689
+    second: AchievementGetProtagSquawk1_3
   - first:
-      213: 7719659433237405068
-    second: SquawkS_4
+      213: 5334937049666876849
+    second: AchievementGetProtagSquawk1_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -125,111 +125,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SquawkS_0
+      name: player_squawk_south_0
       rect:
         serializedVersion: 2
-        x: 180
-        y: 798
-        width: 341
-        height: 705
+        x: 0
+        y: 775
+        width: 710
+        height: 767
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bf2ec775438f29040800000000000000
-      internalID: 4653054268716933883
+      spriteID: 5842514dec6b8984ab415740dfa33a69
+      internalID: 1150457432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SquawkS_1
+      name: player_squawk_south_1
       rect:
         serializedVersion: 2
-        x: 891
-        y: 802
-        width: 339
-        height: 697
+        x: 712
+        y: 775
+        width: 710
+        height: 767
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e29e7ab75d8232e70800000000000000
-      internalID: 9089153370331539758
+      spriteID: 3f44a37d4853f584eb27f2f4e768dfdb
+      internalID: -2032263541
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SquawkS_2
+      name: player_squawk_south_2
       rect:
         serializedVersion: 2
-        x: 1597
-        y: 804
-        width: 341
-        height: 686
+        x: 1424
+        y: 775
+        width: 710
+        height: 767
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e85e2bbab1e1fb8a0800000000000000
-      internalID: -6287273450592344690
+      spriteID: 24570b5899d93c84a92b4139a264826b
+      internalID: 372286579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SquawkS_3
+      name: player_squawk_south_3
       rect:
         serializedVersion: 2
-        x: 180
-        y: 32
-        width: 341
-        height: 703
+        x: 0
+        y: 6
+        width: 710
+        height: 767
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c155fd0f43cf53bc0800000000000000
-      internalID: -3803857005934848740
+      spriteID: 1ddc2fe925aba23408c58701f852f078
+      internalID: -2143810520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SquawkS_4
+      name: player_squawk_south_4
       rect:
         serializedVersion: 2
-        x: 890
-        y: 31
-        width: 341
-        height: 705
+        x: 712
+        y: 6
+        width: 710
+        height: 767
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c8ddb11aa5db12b60800000000000000
-      internalID: 7719659433237405068
+      spriteID: 56e8da34a01450f4aa03da3d744f77bd
+      internalID: 1663355398
       vertices: []
       indices: 
       edges: []
@@ -238,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ea2b3ff3b0506e14fa8eecd67093a58c
     internalID: 0
     vertices: []
     indices: 
@@ -246,13 +246,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":710.0,"y":767.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":2.0,"y":2.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      SquawkS_0: 4653054268716933883
-      SquawkS_1: 9089153370331539758
-      SquawkS_2: -6287273450592344690
-      SquawkS_3: -3803857005934848740
-      SquawkS_4: 7719659433237405068
+      player_squawk_south_0: 1150457432
+      player_squawk_south_1: -2032263541
+      player_squawk_south_2: 372286579
+      player_squawk_south_3: -2143810520
+      player_squawk_south_4: 1663355398
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
