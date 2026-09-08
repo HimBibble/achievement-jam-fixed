@@ -9,6 +9,7 @@ public class ToggleAchievementMenu : MonoBehaviour
     [SerializeField] private GameObject background;
     [SerializeField] private GameObject content;
     [SerializeField] private GameObject achievementEntry;
+    [SerializeField] private GameObject numberText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,6 +27,7 @@ public class ToggleAchievementMenu : MonoBehaviour
                 Time.timeScale=0f;
                 achievementsMenu.SetActive(true);
                 background.SetActive(true);
+                numberText.SetActive(true);
                 foreach(Achievement achievement in AchievementData.lockedAchievements)
                 {
                     GameObject temp = Instantiate(achievementEntry);
@@ -49,13 +51,24 @@ public class ToggleAchievementMenu : MonoBehaviour
                     name.text=achievement.achievementName;
                     description.text=achievement.achievementDescription;
                 }
+                numberText.GetComponent<TextMeshProUGUI>().text="Unlocked: "+AchievementData.unlockedAchievements.Count+"/"+(AchievementData.unlockedAchievements.Count+AchievementData.lockedAchievements.Count);
             }
             else
             {
                 background.SetActive(false);
                 Time.timeScale=1f;
                 achievementsMenu.SetActive(false);
+                numberText.SetActive(false);
+                ClearChildren();
             }
         }
     }
+    public void ClearChildren() {
+        //Debug.Log(transform.childCount);
+        for (int i = 0; i < content.transform.childCount; i++) {
+            Transform child = content.transform.GetChild(i);
+            DestroyImmediate(child.gameObject);
+        }
+        //Debug.Log(transform.childCount);
+    } 
 }
