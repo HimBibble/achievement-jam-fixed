@@ -14,6 +14,7 @@ public class SceneInitializer : MonoBehaviour
         else if(SceneManager.GetActiveScene().name=="Level Blockout"){
             changeMenu=GameObject.Find("Canvas").GetComponent<ChangeMenu>();
             changeMenu.SetMenu("None");
+            TriggerData.SetTrigger("Play",true);
         }
         if(PlayerPrefs.HasKey("Volume")){
         AudioListener.volume=PlayerPrefs.GetFloat("Volume");

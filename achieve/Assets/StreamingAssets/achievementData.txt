@@ -38,7 +38,6 @@ Turn it up!;Raise the game's audio.;IncreaseAudio
 I;Earn your first achievement.;Achievement
 X;Earn ten achievements.;Achievement10
 L;Earn fifty achievements.;Achievement50
-Clicky;Click the game.;LeftMouse
 That's right.;Right click the game.;RightMouse
 MOUSE3;Middle click the game.;MiddleMouse
 My favorite spot.;Find the developers fav spot.;SecretSpot

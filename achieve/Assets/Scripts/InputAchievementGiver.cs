@@ -38,8 +38,8 @@ public class InputAchievementGiver : MonoBehaviour
         if (Input.GetKeyDown("0")){TriggerData.SetTrigger("Key0",true);}
         else{TriggerData.SetTrigger("Key0",false);}
         //mouse
-        if (Input.GetMouseButton(0)){TriggerData.SetTrigger("LeftMouse",true);}
-        else{TriggerData.SetTrigger("LeftMouse",false);}
+        //if (Input.GetMouseButton(0)){TriggerData.SetTrigger("LeftMouse",true);}
+        //else{TriggerData.SetTrigger("LeftMouse",false);}
         if (Input.GetMouseButtonDown(1)){TriggerData.SetTrigger("RightMouse",true);}
         else{TriggerData.SetTrigger("RightMouse",false);}
         if (Input.GetMouseButtonDown(2)){TriggerData.SetTrigger("MiddleMouse",true);}
