@@ -1,10 +1,13 @@
 using UnityEngine;
 
-public class Settings : MonoBehaviour
+public class Credits : MonoBehaviour
 {
     [SerializeField] private SeetingsHide Hide;
     [SerializeField] private SeetingsHide Hide2;
-    
+    [SerializeField] private SeetingsHide Hide3;
+    [SerializeField] private SeetingsHide Hide4;
+    [SerializeField] private SeetingsHide Hide5;
+    [SerializeField] private SeetingsHide Hide6;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,13 +18,5 @@ public class Settings : MonoBehaviour
     void Update()
     {
         
-    }
-
-    public void press()
-    {
-        Hide.Toggle();
-        Hide2.Toggle();
-        
-
     }
 }
