@@ -19,6 +19,9 @@ public class ToggleAchievementMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!isPaused){
+            ClearChildren();
+        }
         if(Input.GetKeyDown(KeyCode.Tab))
         {
             isPaused=!isPaused;
@@ -27,7 +30,7 @@ public class ToggleAchievementMenu : MonoBehaviour
                 Time.timeScale=0f;
                 achievementsMenu.SetActive(true);
                 background.SetActive(true);
-                numberText.SetActive(true);
+                //numberText.SetActive(true);
                 foreach(Achievement achievement in AchievementData.lockedAchievements)
                 {
                     GameObject temp = Instantiate(achievementEntry);
@@ -58,17 +61,19 @@ public class ToggleAchievementMenu : MonoBehaviour
                 background.SetActive(false);
                 Time.timeScale=1f;
                 achievementsMenu.SetActive(false);
-                numberText.SetActive(false);
+                //numberText.SetActive(false);
                 ClearChildren();
             }
         }
     }
     public void ClearChildren() {
         //Debug.Log(transform.childCount);
+        achievementsMenu.SetActive(true);
         for (int i = 0; i < content.transform.childCount; i++) {
             Transform child = content.transform.GetChild(i);
             DestroyImmediate(child.gameObject);
         }
+        achievementsMenu.SetActive(false);
         //Debug.Log(transform.childCount);
     } 
 }

@@ -15,7 +15,6 @@ That was fast.;Die within 5 seconds of spawning;DieIn5s
 Livin';Stay alive for 10 seconds;Alive10s
 Survivin';Stay alive for 30 seconds;Alive30s
 Dolania Americana;Stay alive for 5 minutes.;Alive300s
-Gradius Fan;Enter the Konami Code.;KonamiCode
 One!;Press the number 1.;Key1
 Two!;Press the number 2.;Key2
 Three!;Press the number 3.;Key3

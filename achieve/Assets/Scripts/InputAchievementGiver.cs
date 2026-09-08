@@ -51,22 +51,33 @@ public class InputAchievementGiver : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.RightArrow)){myCode.Add("Right");}
         if (Input.GetKeyDown(KeyCode.A)){myCode.Add("A");}
         if (Input.GetKeyDown(KeyCode.B)){myCode.Add("B");}
-        if(myCode.Count==0)
+        /*int successfulInputs=0;
+        if(myCode.Count>0)
         {
-            TriggerData.SetTrigger("KonamiCode",false);
-            return;
-        }
-        for(int i =0;i<myCode.Count;i++)
-        {
-            //Debug.Log(myCode[i]);
-            if(myCode[i]!=KONAMI_CODE[i])
-            {
-                Clear(); //because clearing inside the loop results in an error
-                return;
+            if(myCode.Count>10){
+                Clear();
             }
-        }
-        if(myCode.Count>=10){
+            for(int i =0;i<myCode.Count;i++)
+            {
+                //Debug.Log(myCode[i]);
+                if(myCode[i]==KONAMI_CODE[i])
+                {
+                    successfulInputs++;
+                    //Debug.Log(successfulInputs);
+                    //Clear(); //because clearing inside the loop results in an error
+                    //return;
+                }
+                else{
+                    Clear();
+                    return;
+                }
+            }
+            if(successfulInputs==10){
             TriggerData.SetTrigger("KonamiCode",true);}
+            Clear();
+            successfulInputs=0;
+        }*/
+        
     }
     private void Clear()
     {
