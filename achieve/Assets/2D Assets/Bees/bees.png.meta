@@ -1,0 +1,379 @@
+fileFormatVersion: 2
+guid: 50b2c8ef287d87845b35e7494996c1e1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8973894263526638248
+    second: bees_0
+  - first:
+      213: 4427510291899619323
+    second: bees_1
+  - first:
+      213: 8071783907141819165
+    second: bees_2
+  - first:
+      213: 1301682863884123923
+    second: bees_3
+  - first:
+      213: 8043258548939133512
+    second: bees_4
+  - first:
+      213: 8182760247890550409
+    second: bees_5
+  - first:
+      213: -8470279258253319243
+    second: bees_6
+  - first:
+      213: 966938100648026176
+    second: bees_7
+  - first:
+      213: -6643134945811277848
+    second: bees_8
+  - first:
+      213: 8475820372325594750
+    second: bees_9
+  - first:
+      213: -7072122598525813095
+    second: bees_10
+  - first:
+      213: 3435506158799501340
+    second: bees_11
+  - first:
+      213: -4546809301178532302
+    second: bees_12
+  - first:
+      213: -593136737928774288
+    second: bees_13
+  - first:
+      213: -8970938815200593160
+    second: bees_14
+  - first:
+      213: -4705783064445562660
+    second: bees_15
+  - first:
+      213: 1692983753756691762
+    second: bees_16
+  - first:
+      213: 7364810830943775248
+    second: bees_17
+  - first:
+      213: -5281947712034390995
+    second: bees_18
+  - first:
+      213: 815128027742264991
+    second: bees_19
+  - first:
+      213: 5846567997650639934
+    second: bees_20
+  - first:
+      213: 7084190208424237954
+    second: bees_21
+  - first:
+      213: -8168192807696091152
+    second: bees_22
+  - first:
+      213: 4520598449714721092
+    second: bees_23
+  - first:
+      213: -6880540547068457105
+    second: bees_24
+  - first:
+      213: -591668753757031890
+    second: bees_25
+  - first:
+      213: 2964853686367982605
+    second: bees_26
+  - first:
+      213: 936676305837666364
+    second: bees_27
+  - first:
+      213: -5976514759928117395
+    second: bees_28
+  - first:
+      213: 9103851231062499375
+    second: bees_29
+  - first:
+      213: 1594272598472964634
+    second: bees_30
+  - first:
+      213: -5142158906305881807
+    second: bees_31
+  - first:
+      213: -3099796216389301996
+    second: bees_32
+  - first:
+      213: 3794637477713912958
+    second: bees_33
+  - first:
+      213: -6824486753740513394
+    second: bees_34
+  - first:
+      213: -6015836661250761396
+    second: bees_35
+  - first:
+      213: -2439670401356343573
+    second: bees_36
+  - first:
+      213: 8865938052845535739
+    second: bees_37
+  - first:
+      213: 733774281047196393
+    second: bees_38
+  - first:
+      213: 8505033052677849553
+    second: bees_39
+  - first:
+      213: -1654065879370538856
+    second: bees_40
+  - first:
+      213: -6815180667644197789
+    second: bees_41
+  - first:
+      213: 3705909911458752991
+    second: bees_42
+  - first:
+      213: 5552153014113216393
+    second: bees_43
+  - first:
+      213: -6826362973861277210
+    second: bees_44
+  - first:
+      213: 4387820616078502339
+    second: bees_45
+  - first:
+      213: 2444404946819945193
+    second: bees_46
+  - first:
+      213: 7378578875519688107
+    second: bees_47
+  - first:
+      213: -7670407459687977144
+    second: bees_48
+  - first:
+      213: -6108977140249818268
+    second: bees_49
+  - first:
+      213: 7911809345323562465
+    second: bees_50
+  - first:
+      213: 1893506947065843760
+    second: bees_51
+  - first:
+      213: -6335873976093185877
+    second: bees_52
+  - first:
+      213: 422250201551931450
+    second: bees_53
+  - first:
+      213: 5680579399797861901
+    second: bees_54
+  - first:
+      213: 455931263714584554
+    second: bees_55
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bees_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a2cb65794da98c70800000000000000
+      internalID: 8973894263526638248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bees_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf7101c072da17d30800000000000000
+      internalID: 4427510291899619323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bees_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1b17e882bcb40070800000000000000
+      internalID: 8071783907141819165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bees_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31fb6080ba1801210800000000000000
+      internalID: 1301682863884123923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f9ce8a4f81dbf4a45bc02c3128a0ce8b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      bees_0: 8973894263526638248
+      bees_1: 4427510291899619323
+      bees_2: 8071783907141819165
+      bees_3: 1301682863884123923
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
