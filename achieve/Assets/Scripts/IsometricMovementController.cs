@@ -6,7 +6,6 @@ public class IsometricMovementController : MonoBehaviour
 {
     [SerializeField] AnimationCurve curveY;
     private PlayerDeath playerDeath;
-    private string previousDirection;
     private static int jumpCounter=0;
     Animator anim;
     Rigidbody2D rb;
@@ -93,7 +92,7 @@ public class IsometricMovementController : MonoBehaviour
                 anim.SetFloat("vspeed",0);
                 if(horizontal > 0.1)
                 {
-                    previousDirection="Right";
+                    //previousDirection="Right";
                     anim.SetInteger("previousDirection",1);
                     TriggerData.SetTrigger("MoveRight",true);
                 }
@@ -103,7 +102,7 @@ public class IsometricMovementController : MonoBehaviour
                 }
                 if(horizontal < -0.1)
                 {
-                    previousDirection="Left";
+                    //previousDirection="Left";
                     anim.SetInteger("previousDirection",2);
                     TriggerData.SetTrigger("MoveLeft",true);
                 }
@@ -119,7 +118,7 @@ public class IsometricMovementController : MonoBehaviour
                 anim.SetFloat("hspeed",0);
                 if(vertical > 0.1)
                 {
-                    previousDirection="Up";
+                    //previousDirection="Up";
                     anim.SetInteger("previousDirection",3);
                     TriggerData.SetTrigger("MoveUp",true);
                 }
@@ -129,7 +128,7 @@ public class IsometricMovementController : MonoBehaviour
                 }
                 if(vertical < -0.1)
                 {
-                    previousDirection="Down";
+                    //previousDirection="Down";
                     anim.SetInteger("previousDirection",4);
                     TriggerData.SetTrigger("MoveDown",true);
                 }

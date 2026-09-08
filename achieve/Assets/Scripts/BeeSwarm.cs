@@ -2,13 +2,12 @@ using UnityEngine;
 
 public class BeeSwarm : Interactable
 {
-    private GameObject player;
     [SerializeField] private float speed=1;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    protected override void Start()
     {
+        base.Start();
         this.gameObject.tag="Collision";
-        player=GameObject.Find("Player");
     }
 
     // Update is called once per frame

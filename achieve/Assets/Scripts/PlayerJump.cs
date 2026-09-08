@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerJump : MonoBehaviour
 {
-    private Rigidbody2D rb;
+    /*private Rigidbody2D rb;
     public double Velocity = 0;
     public double distance = 0;
     public bool isDead=false;
@@ -23,6 +23,7 @@ public class PlayerJump : MonoBehaviour
         if (distance > 0)
         {
             rb.isKinematic = false;
+            rb.bodyType="Dynamic";
             if (Velocity > -10)
             {
                 Velocity -= 0.1;
@@ -35,5 +36,5 @@ public class PlayerJump : MonoBehaviour
             rb.isKinematic = true;
         }
 
-    }
+    }*/
 }

@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    public double Velocity = 0;
+    /*public double Velocity = 0;
     public double distance = 0;
     private Rigidbody2D rb;
     private float moveh, movev;
@@ -54,5 +54,5 @@ public class PlayerMovement : MonoBehaviour
             distance = 0;
             rb.isKinematic = false;
         }
-    }
+    }*/
 }

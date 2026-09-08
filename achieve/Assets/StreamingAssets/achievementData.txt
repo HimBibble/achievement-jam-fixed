@@ -33,7 +33,7 @@ Silent Nighthawk;Don't squawk for 1 minute.;NoSquawk60
 It's big, it's heavy;Squawk at a tree.;InteractTree
 Quiet down now.;Lower the game's audio;DecreaseAudio
 I worked hard on the song y'know?;Mute the game.;MuteAudio
-Turn it up!;Raise the games audio.;IncreaseVolume
+Turn it up!;Raise the games audio.;IncreaseAudio
 I;Earn your first achievement.;Achievement
 X;Earn ten achievements.;Achievement10
 L;Earn fifty achievements.;Achievement50
@@ -57,3 +57,5 @@ devachievement5;Click on (dev name);ClickDevThai
 Oops.;Crush a flower;TrampleFlower
 Black Thumb;Crush 5 flowers.;TrampleFlower5
 Blossom Buster;Crush all the flowers.;TrampleFlowerAll
+Humble Beginnings;Click play.;Play
+Game Journalist;Open the instructions menu;InstructionsMenu

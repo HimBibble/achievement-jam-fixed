@@ -10,11 +10,9 @@ public class AchievementChecker : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
+        DontDestroyOnLoad(this.gameObject);
         TriggerData.init();
         AchievementData.init();
-        foreach(Achievement achievement in AchievementData.lockedAchievements){
-        //Debug.Log(achievement.achievementName+": "+achievement.achievementDescription+" Unlocked by: "+achievement.achievementTriggers[0].triggerName);
-        }
 
     }
 

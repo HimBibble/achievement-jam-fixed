@@ -10,7 +10,6 @@ public class PlayerDeath : MonoBehaviour
     [SerializeField] private AudioClip DEATH_SOUND;
     private static float respawnCooldown=2.0f;
     private static float respawnTimer=0f;
-    private static float gracePeriod=0.5f;
     private static PlayerInteract playerInteract;
     public bool isDead=false;
 

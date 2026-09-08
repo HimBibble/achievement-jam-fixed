@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 817208658893368186}
-  - component: {fileID: 6480637717565595288}
   - component: {fileID: 2337124783415455831}
   - component: {fileID: 4051199634076680987}
   m_Layer: 0
@@ -34,19 +33,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6480637717565595288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5689031461466213851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d45e4d319a45ed88ab95f86a09ab2ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TimerAchievement
-  aliveTimer: 0
 --- !u!114 &2337124783415455831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,4 +57,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bc7048c52a4c4807862889095dffd01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AchievementChecker
-  exitDoor: {fileID: 936357420794792707, guid: 2904c23fb3cac5f769aafb42f5231502, type: 3}
