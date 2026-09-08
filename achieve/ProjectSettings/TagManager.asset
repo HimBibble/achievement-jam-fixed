@@ -46,6 +46,9 @@ TagManager:
   - name: Plants
     uniqueID: 1335419005
     locked: 0
+  - name: Player
+    uniqueID: 2592935837
+    locked: 0
   m_RenderingLayers:
   - Default
   m_MigratedRenderPipelines: []

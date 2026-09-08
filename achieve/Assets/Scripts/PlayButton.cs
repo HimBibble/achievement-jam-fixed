@@ -15,8 +15,8 @@ public class PlayButton : MonoBehaviour
         
     }
 
-    public void Play()
+    public static void OnClick()
     {
-        SceneManager.LoadScene("0");
+        SceneManager.LoadScene("Level Blockout");
     }
 }

@@ -16,7 +16,8 @@ public class IsometricMovementController : MonoBehaviour
     float landingDis;
     float speed = 2f;
     float timeElapsed = 0f;
-    bool onGround = true;
+    private bool OnGround = true;
+    public bool onGround {get {return OnGround;} set{OnGround=value;}}
     bool jump = false;
 
     void Start()
