@@ -11,6 +11,10 @@ public class SceneInitializer : MonoBehaviour
             changeMenu=GameObject.Find("Canvas").GetComponent<ChangeMenu>();
             changeMenu.SetMenu("Main");
         }
+        else if(SceneManager.GetActiveScene().name=="Level Blockout"){
+            changeMenu=GameObject.Find("Canvas").GetComponent<ChangeMenu>();
+            changeMenu.SetMenu("None");
+        }
         if(PlayerPrefs.HasKey("Volume")){
         AudioListener.volume=PlayerPrefs.GetFloat("Volume");
         }

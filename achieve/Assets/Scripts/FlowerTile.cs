@@ -37,7 +37,7 @@ public class FlowerTile : Interactable
             else{TriggerData.SetTrigger("Flower",false);}
             if(flowersStomped==5){TriggerData.SetTrigger("TrampleFlower5",true);}
             else{TriggerData.SetTrigger("Flower5",false);}
-            if(flowersStomped==10){TriggerData.SetTrigger("TrampleFlowerAll",true);}
+            if(flowersStomped==20){TriggerData.SetTrigger("TrampleFlowerAll",true);}
             else{TriggerData.SetTrigger("FlowerAll",false);}
             interactTimer=1f; //cannot be interacted with again because interactTimer does not decrease
         }

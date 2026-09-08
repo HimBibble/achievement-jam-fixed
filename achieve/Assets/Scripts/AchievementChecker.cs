@@ -2,23 +2,35 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.IO;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class AchievementChecker : MonoBehaviour
 {
+    [SerializeField] private AchievementPopup achievementPopup;
     private static int unlockCounter=0;
+    private AudioSource audioSource;
     private static List<Achievement> achievementsToUnlock=new List<Achievement>();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
+        //DontDestroyOnLoad(this.gameObject);
         TriggerData.init();
         AchievementData.init();
 
     }
-
+    void Start(){
+        audioSource=GameObject.Find("Sound Source").GetComponent<AudioSource>();
+    }
     // Update is called once per frame
     void Update()
     {
+        /*if(achievementPopup==null){
+            if(SceneManager.GetActiveScene().name=="Level Blockout")
+            {
+                achievementPopup=GameObject.Find("Achievement Popup").GetComponent<AchievementPopup>();
+            }
+        }*/
+
         // It is more efficient to check for individual achievements when relevant triggers flip, but it's annoying to keep up with
         if(TriggerData.onTriggers.Count>0/*&&AchievementData.isInitialized*/)
         {
@@ -63,6 +75,14 @@ public class AchievementChecker : MonoBehaviour
         for(int i=achievementsToUnlock.Count-1;i>0;i--)
         {
             AchievementData.UnlockAchievement(achievementsToUnlock[i]);
+            //if(SceneManager.GetActiveScene().name=="Level Blockout")
+            //{
+            achievementPopup.UnlockAchievement(achievementsToUnlock[i]);
+            //}
+            //else{
+            //    audioSource.Play();
+            //}
+             //handles funny ui stuff
             achievementsToUnlock.RemoveAt(i);
             unlockCounter++;
         }

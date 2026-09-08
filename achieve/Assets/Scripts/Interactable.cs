@@ -7,8 +7,8 @@ public abstract class Interactable : MonoBehaviour
     public float interactTimer {get{return InteractTimer;} protected set{InteractTimer=value;}}
     protected float InteractCooldown;
     public float interactCooldown {get{return InteractCooldown;} protected set{InteractCooldown=value;}}
-    protected string ASSET_PATH;
-    protected string ANIM_PATH;
+    //protected string ASSET_PATH;
+    //protected string ANIM_PATH;
     protected int currentSpriteIndex=0;
     //protected int spriteIndexes;
     protected static GameObject player;

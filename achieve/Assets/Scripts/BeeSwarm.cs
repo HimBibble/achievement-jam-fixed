@@ -19,6 +19,7 @@ public class BeeSwarm : Interactable
     public override void Interact()
     {
         player.GetComponent<PlayerDeath>().Kill();
+        TriggerData.SetTrigger("DieBees",true);
         GameObject.Destroy(this.gameObject);
     }
 }

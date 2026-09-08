@@ -5,8 +5,12 @@ using UnityEngine;
 public class IsometricMovementController : MonoBehaviour
 {
     [SerializeField] AnimationCurve curveY;
+    [SerializeField] private AudioClip walkSound;
+    [SerializeField] private AudioClip jumpSound;
+    private AudioSource audioSource;
     private PlayerDeath playerDeath;
     private static int jumpCounter=0;
+    private float stepTimer=0;
     Animator anim;
     Rigidbody2D rb;
     Vector2 movement;
@@ -25,6 +29,7 @@ public class IsometricMovementController : MonoBehaviour
         anim = transform.GetChild(0).GetComponent<Animator>();
         playerDeath=GameObject.Find("Player").GetComponent<PlayerDeath>();
         rb = GetComponent<Rigidbody2D>();
+        audioSource=GameObject.Find("Player").GetComponent<AudioSource>();
     }
 
     void Update()
@@ -53,6 +58,9 @@ public class IsometricMovementController : MonoBehaviour
             timeElapsed = 0f;
             onGround = false;
             anim.SetBool("onGround",false);
+            audioSource.clip=jumpSound;
+            audioSource.Play();
+
         }
         else
         {
@@ -81,10 +89,17 @@ public class IsometricMovementController : MonoBehaviour
 
     void InputHandler()
     {
+        stepTimer-=Time.deltaTime;
         if(!playerDeath.isDead)
         {
             float horizontal = Input.GetAxis("Horizontal");
             float vertical = Input.GetAxis("Vertical");
+            if(stepTimer<0&&(horizontal>0.1f||vertical>0.1f||horizontal<-0.1f||vertical<-0.1f))
+            {
+                stepTimer=0.5f;
+                audioSource.clip=walkSound;
+                audioSource.Play();
+            }
             if(Mathf.Abs(horizontal) >= Mathf.Abs(vertical))
             {
                 movement = new Vector2(horizontal, 0);

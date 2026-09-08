@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerInteract : MonoBehaviour
 {
-    private float interactionRadius = 1;
+    private float interactionRadius = 2;
     private bool InLevel = true;
     public bool inLevel {get{return InLevel;} set{InLevel=value;}}
     public void SquawkInteract()
@@ -12,7 +12,7 @@ public class PlayerInteract : MonoBehaviour
         foreach (Collider2D hitCollider in hitColliders)
         {
             GameObject otherGameObject = hitCollider.gameObject;
-            //Debug.Log(hitGameObject.name);
+            //Debug.Log(otherGameObject.name);
             if(otherGameObject.tag=="Squawk")
             {
                 if(otherGameObject.GetComponent<TreeTile>()!=null){otherGameObject.GetComponent<TreeTile>().Interact();}

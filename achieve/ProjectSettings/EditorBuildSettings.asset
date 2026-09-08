@@ -12,7 +12,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Level Blockout.unity
     guid: c86373b8289784f4c8c37578c693a24f
   - enabled: 1
-    path: Assets/Scenes/Gameover.unity
+    path: Assets/Scenes/Bad Ending.unity
     guid: a404770cb3f0bdf4eae217b0c4ec6d9e
+  - enabled: 1
+    path: Assets/Scenes/Good Ending.unity
+    guid: 593816cafa37b7c03a628643774fa1cb
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

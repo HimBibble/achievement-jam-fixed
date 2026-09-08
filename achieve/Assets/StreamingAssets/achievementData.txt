@@ -29,11 +29,13 @@ Zero.;Press the number 0.;Key0
 TOKI WO TOMARE;Pause the game.;Pause
 Toki Wa Ugokidasu;Resume the game.;Unpause
 Wilhelm!;Fall off the map.;VoidOut
+Frequent Flier;Fall off the map 5 times.;VoidOut5
+Crave the Void;Fall off the map 25 times.;VoidOut25
 Silent Nighthawk;Don't squawk for 1 minute.;NoSquawk60
 It's big, it's heavy;Squawk at a tree.;InteractTree
 Quiet down now.;Lower the game's audio;DecreaseAudio
 I worked hard on the song y'know?;Mute the game.;MuteAudio
-Turn it up!;Raise the games audio.;IncreaseAudio
+Turn it up!;Raise the game's audio.;IncreaseAudio
 I;Earn your first achievement.;Achievement
 X;Earn ten achievements.;Achievement10
 L;Earn fifty achievements.;Achievement50
@@ -49,13 +51,15 @@ Feed me more Seymour!;Feed a venus flytrap four times.;Flytrap4
 Gobble Gobble;Feed a venus flytrap five times.;Flytrap5
 Adjustment;Open the settings menu;SettingsMenu
 That's who made this!;Look at the credits.;CreditsMenu
-devachievement1;Click on (dev name);ClickDevAngel
-devachievement2;Click on (dev name);ClickDevChristian
-devachievement3;Click on (dev name);ClickDevDaniel
-devachievement4;Click on (dev name);ClickDevNathan
-devachievement5;Click on (dev name);ClickDevThai
+Angel: No description added;Click on Angel;ClickDevAngel
+Spooky Scary Skeletons;Click on Christian;ClickDevChristian
+Dan the Man;Click on Daniel;ClickDevDaniel
+Icarly: Found Cosgrove's Cousin;Click on Nathan;ClickDevNathan
+Like the country???;Click on Thai;ClickDevThai
 Oops.;Crush a flower;TrampleFlower
 Black Thumb;Crush 5 flowers.;TrampleFlower5
 Blossom Buster;Crush all the flowers.;TrampleFlowerAll
 Humble Beginnings;Click play.;Play
 Game Journalist;Open the instructions menu;InstructionsMenu
+Not the Bees!;Summon the bees;SpawnBees
+Get Bee'd;Die to bees;DieBees

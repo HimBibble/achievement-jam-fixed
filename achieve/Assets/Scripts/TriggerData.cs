@@ -51,6 +51,8 @@ public static class TriggerData
     }
     public static void init()
     {
+        OffTriggers.Clear();
+        OnTriggers.Clear();
         string[] temp1 = File.ReadAllLines(TRIGGER_DATA_PATH);
         for(int i=0;i<temp1.Length;i++){
             string[] temp2 = temp1[i].Split(";");

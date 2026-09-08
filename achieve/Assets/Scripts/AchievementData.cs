@@ -31,13 +31,15 @@ public static class AchievementData
         LockedAchievements.Remove(achievementToUnlock);
         UnlockedAchievements.Add(achievementToUnlock);
         Debug.Log("Achievement: "+achievementToUnlock.achievementName+" unlocked!");
-        //call to code for funny ui stuff when unlocking achievements
     }
     public static void init()
     {
+        LockedAchievements.Clear();
+        UnlockedAchievements.Clear();
         string[] temp1 = File.ReadAllLines(ACHIEVEMENT_DATA_PATH);
         for(int i=0;i<temp1.Length;i++)
         {
+            //Debug.Log(i);
             string[] temp2 = temp1[i].Split(";");
             LockedAchievements.Add(new Achievement(temp2[0],temp2[1],new List<Trigger>()));
             for(int j=2;j<temp2.Length;j++)

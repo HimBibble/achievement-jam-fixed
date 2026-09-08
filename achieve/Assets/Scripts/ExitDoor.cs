@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ExitDoor : Interactable
 {
@@ -18,11 +19,12 @@ public class ExitDoor : Interactable
     {
         if(AchievementData.unlockedAchievements.Count>=50)
         {
-             //load good ending scene
+            Debug.Log("a");
+            SceneManager.LoadScene("Good Ending");
         }
         else
         {
-            Debug.Log("bad");//load bad ending scene
+            SceneManager.LoadScene("Bad Ending");
         }
     }
 }
